@@ -1,0 +1,22 @@
+---
+layout: default
+title: GEEKOFIA | Authors
+permalink: /authors/
+---
+<link rel="stylesheet" type="text/css" href="/assets/css/authors.css">
+
+<h2 class="title-authors">Our Authors</h2>
+
+<div class="card-columns authors-box">
+  {% for author in site.authors %}
+  <div class="card">
+    <img src="/assets/images/authors/13.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">{{ author.name }}</h4>
+      <h5>{{ author.position }}</h5>
+      <p class="card-text">{{ author.content | markdownify }}</p>
+      <a href="{{ author.url }}" class="btn btn-primary stretched-link">More <i class="fas fa-arrow-right"></i></a></a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,39 @@
+- name: Home
+  link: https://geekofia.in
+  title: GEEKOFIA Home Page
+
+- name: Latest
+  link: /
+  title: Latest Blog Posts
+
+- name: Android
+  link: /category/android/
+  title: Latest Android Posts
+
+- name: Programming
+  link: /category/programming/
+  title: Latest Programming Posts
+
+- name: Cyber Security
+  link: /category/cyber-security/
+  title: Latest Cyber Security Blog Posts
+
+- name: Patches
+  link: /category/patches/
+  title: Latest Cyber Security Blog Posts
+
+- name: CTF
+  link: /category/ctf/
+  title: Latest CTF Posts
+
+- name: Miscellaneous
+  link: /category/miscellaneous/
+  title: Miscellaneous Blog Posts
+
+- name: Authors
+  link: /authors/
+  title: About Our Authors
+
+- name: Contact
+  link: /contact/
+  title: Reach us

@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#"><i class="fas fa-blog"></i> GEEKOFIA #Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            {% for item in site.data.navigation %}
+            <li class="nav-item">
+                <a href="{{ item.link }}" class="nav-link" data-toggle="tooltip" title="{{ item.title }}"
+                    {% if page.url == item.link %}style="color: #FFF;" {% endif %}>
+                    {{ item.name }}
+                </a>
+            </li>
+            {% endfor %}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    title="Posts by tags">
+                    Tags
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {% for tag in site.tags %}
+                    <a href="/tags/{{ tag[0] }}/" class="dropdown-item">
+                        {{ tag[0] }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </li>
+        </ul>
+
+        <div class="nav nav-social">
+            <a class="nav-item" href="https://github.com/chankruze" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="nav-item" href="https://instagram.com/chankruze" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="nav-item" href="https://t.me/geekofia" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search blog.geekofia.in" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit">Search</button>
+        </form>
+    </div>
+</nav>

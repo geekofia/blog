@@ -1,0 +1,13 @@
+.authors-box {
+    padding: 30px 30px 10px 30px;
+}
+
+.card {
+    text-align: center;
+    border-bottom: 15px solid #00B9F5;
+}
+
+.title-authors {
+    text-align: center;
+    padding-top: 10px;
+}

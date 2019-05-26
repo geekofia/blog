@@ -1,0 +1,78 @@
+.content {
+    text-transform: none;
+}
+
+.btn-back {
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    border: 1px solid #00B444;
+    border-radius: 5px;
+    background: transparent;
+    color: #00B444;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover {
+    color: #FFF;
+    border: none;
+    background: #00B444;
+}
+
+.fa-calendar,
+.fa-user-edit,
+.fa-folder{
+    padding-right: 5px;
+    font-size: 1.2em;
+}
+
+.fa-user-edit.icon-post,
+.fa-folder {
+    padding-left: 5px;
+}
+
+pre {
+    padding: 10px;
+    font-family: monospace, monospace;
+    background: #EEEEEE;
+    border: none !important;
+    border-radius: 5px;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+    list-style-type: decimal !important;
+    background: #EEEEEE;
+}
+
+#disqus_thread {
+    padding-top: 20px;
+}
+
+.tags,
+.categories{
+    color: #FFF;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.tags:hover,
+.categories:hover{
+    background: #aaa;
+    color: #FFF;
+}
+
+/* .related-post{
+    margin: 0 5px;
+    padding: 5px;
+} */

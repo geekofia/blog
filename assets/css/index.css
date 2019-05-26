@@ -1,0 +1,156 @@
+/** import indivisual CSS **/
+
+@import "navigation.css";
+@import "footer.css";
+@import "animation.css";
+
+/** import fonts **/
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans/GoogleSans-Regular.ttf') format('truetype'),
+        url('../fonts/GoogleSans/GoogleSans-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Google Sans', 'Courier New', Courier, monospace;
+    font-weight: 100;
+    text-transform: capitalize;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: block;
+    width: 10em;
+    overflow: auto;
+    height: 2em;
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+    /* or add it to the track */
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+a {
+    color: #007BFF;
+    /* Azure Radiance */
+    background-color: transparent;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #363636;
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+
+.btn-search {
+    font-weight: 500;
+    color: #ffe484;
+    border-color: #ffe484;
+}
+
+.jumbo-01 {
+    margin-top: 10px;
+}
+
+.content {
+    /* margin-top: 100px; */
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border-bottom: 8px solid #53c8ff;
+}
+
+.highlighter-rouge {
+    padding: 5px;
+    background: #F3F3F3;
+    /* Wild Sand*/
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+.ul-latest-posts {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.end-of-post {
+    font-weight: bold;
+    padding-top: 5px;
+    margin: auto;
+}
+
+.lnr,
+.txt1.p-b-20 {
+    color: #000;
+}
+
+.btn-feed {
+    border: none;
+    color: #ff8800;
+    cursor: pointer;
+    float: right;
+}
+
+.fa-comments {
+    padding-right: 5px;
+}
+
+.row .post-img-box{
+    margin: auto;
+    max-height: 240px;
+    max-width: inherit;
+    text-align: center;
+}
+
+.post-image {
+    max-height: inherit;
+    max-width: inherit;
+    transition: transform .5s;
+}
+
+.post-image:hover {
+    transform: scale(1.2);
+}
+
+.icon-share {
+    font-size: 1.5em;
+}
+
+.post-bottom {
+    padding-top: 10px;
+}
+
+.social-share {
+    padding-top: 5px;
+}
+
+.icon-latest-posts{
+    padding-left: 10px !important;
+}
+
+@media (max-width: 1200px) {
+    .post-image {
+        max-width: 290px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .post-image {
+        max-width: 210px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .post-image {
+        max-width: 240px; 
+    }
+}
