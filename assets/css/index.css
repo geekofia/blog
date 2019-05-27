@@ -67,15 +67,6 @@ mark {
     border-bottom: 8px solid #53c8ff;
 }
 
-.highlighter-rouge {
-    padding: 5px;
-    background: #F3F3F3;
-    /* Wild Sand*/
-    color: #000;
-    border: none;
-    border-radius: 5px;
-}
-
 .ul-latest-posts {
     list-style-type: none;
     padding-left: 0px;
@@ -104,7 +95,7 @@ mark {
     padding-right: 5px;
 }
 
-.row .post-img-box{
+.col.post-img-box{
     margin: auto;
     max-height: 240px;
     max-width: inherit;

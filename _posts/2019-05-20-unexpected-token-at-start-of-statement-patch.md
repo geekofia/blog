@@ -4,7 +4,7 @@ author: chankruze
 date:   2019-05-20 07:27:34 +0530
 categories: [android, patches]
 tags: [kernel, compilation_error]
-thumbnail: /assets/images/01.png
+thumbnail: /assets/images/thumbnails/01.png
 excerpt_separator: <!--excerpt-->
 ---
 My life is a litle bit weired. I never got success on first attempt, there is always some errors, bugs. So, now-a-days seeing an error

@@ -1,3 +1,5 @@
+@import "prism.css";
+
 .content {
     text-transform: none;
 }
@@ -21,7 +23,7 @@ button:hover {
 
 .fa-calendar,
 .fa-user-edit,
-.fa-folder{
+.fa-folder {
     padding-right: 5px;
     font-size: 1.2em;
 }
@@ -31,10 +33,30 @@ button:hover {
     padding-left: 5px;
 }
 
-pre {
+/* pre.prettyprint{
+    border: none !important;
+    background: #EEE;
+}
+
+code.highlighter-rouge{
+    color: #000;
+    padding: 2px 5px;
+    background: #EEEEEE;
+    border-radius: 5px;
+} 
+
+.highlighter-rouge .highlight pre {
     padding: 10px;
     font-family: monospace, monospace;
-    background: #EEEEEE;
+    border: none !important;
+    border-radius: 5px;
+    color: #FFF;
+    background: #414141;
+    margin: 5px 0;
+}
+*/
+
+.highlight {
     border: none !important;
     border-radius: 5px;
 }
@@ -50,7 +72,7 @@ li.L7,
 li.L8,
 li.L9 {
     list-style-type: decimal !important;
-    background: #EEEEEE;
+    background: #FFF !important;
 }
 
 #disqus_thread {
@@ -58,7 +80,7 @@ li.L9 {
 }
 
 .tags,
-.categories{
+.categories {
     color: #FFF;
     background: #007BFF;
     border: none;
@@ -67,7 +89,7 @@ li.L9 {
 }
 
 .tags:hover,
-.categories:hover{
+.categories:hover {
     background: #aaa;
     color: #FFF;
 }
@@ -76,3 +98,13 @@ li.L9 {
     margin: 0 5px;
     padding: 5px;
 } */
+
+.prev-post-button,
+.next-post-button {
+    padding: 6px 12px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #007BFF;
+    text-decoration: none !important;
+    transition: color, background-color 200ms;
+}
