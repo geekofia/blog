@@ -17,12 +17,12 @@ comments: true
   {% if author %}
   <a href="{{ author.url }}">{{ author.name }}</a>
   {% endif %}
-  <i class="fas fa-folder"></i>
+</p>
+<p><i class="fas fa-folder"></i>
   {% for category in page.categories %}
   <a class="categories" href="/category/{{ category }}/">{{ category }}</a></li>
   {% endfor %}
-</p>
-<p><i class="fas fa-tags"></i>
+  <i class="fas fa-tags"></i>
   {% for tag in page.tags %}
   <a class="tags" href="/tags/{{ tag }}/">{{ tag }}</a>
   {% endfor %}
@@ -34,7 +34,7 @@ comments: true
 
 <hr>
 <div class="blog-navigation-buttons">
-  <a class="button  prev-post-button float-left" href="/blog">← Previous Post</a>
+  <a class="button  prev-post-button float-left" href="/blog">← Previous</a>
   <a class="button  next-post-button float-right" href="/blog">Next Post →</a>
   </div>
 

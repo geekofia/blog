@@ -8,14 +8,14 @@
                 {% if author %}
                 <a href="{{ author.url }}">{{ author.name }}</a>
                 {% endif %}
-                <i class="fas fa-folder icon-latest-posts"></i>
-                {% for category in post.categories %}
-                <a class="categories" href="/category/{{ category }}/">{{ category }}</a>
-                {% endfor %}
                 <i class="fas fa-comments icon-latest-posts"></i><a class="disus-comments"
                     href="https://blog.geekofia.in{{ post.url }}#disqus_thread"></a>
             </p>
-            <p><i class="fas fa-tags"></i>
+            <p> <i class="fas fa-folder"></i>
+                {% for category in post.categories %}
+                <a class="categories" href="/category/{{ category }}/">{{ category }}</a>
+                {% endfor %}
+                <i class="fas fa-tags"></i>
                 {% for tag in post.tags %}
                 <a class="tags" href="/tags/{{ tag }}/">{{ tag }}</a>
                 {% endfor %}
