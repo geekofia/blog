@@ -10,33 +10,22 @@ comments: true
 </div>
 
 <p>
-  <i class="fas fa-calendar"></i>
+  <i class="fas fa-calendar-alt"></i>
   {{ page.date | date_to_string }}
   <i class="fas fa-user-edit icon-post"></i>
   {% assign author = site.authors | where: 'short_name', page.author | first %}
   {% if author %}
   <a href="{{ author.url }}">{{ author.name }}</a>
   {% endif %}
-</p>
-<p><i class="fas fa-folder"></i>
-  {% for category in page.categories %}
-  <a class="categories" href="/category/{{ category }}/">{{ category }}</a></li>
-  {% endfor %}
-  <i class="fas fa-tags"></i>
-  {% for tag in page.tags %}
-  <a class="tags" href="/tags/{{ tag }}/">{{ tag }}</a>
-  {% endfor %}
+  <i class="far fa-clock icon-post"></i>
+  {% include post_reading_time.html %}
 </p>
 
 {{ content }}
 
 <p align="center"><b>o EOP o</b></p>
 
-<hr>
-<div class="blog-navigation-buttons">
-  <a class="button  prev-post-button float-left" href="/blog">← Previous</a>
-  <a class="button  next-post-button float-right" href="/blog">Next Post →</a>
-  </div>
+{% include post_navigation.html %}
 
 <div class="related-posts">
 

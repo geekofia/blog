@@ -3,13 +3,12 @@
         <div class="col-12 col-md-8">
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <p>
-                <i class="fas fa-user-edit"></i>
-                {% assign author = site.authors | where: 'short_name', page.author | first %}
-                {% if author %}
-                <a href="{{ author.url }}">{{ author.name }}</a>
-                {% endif %}
-                <i class="fas fa-comments icon-latest-posts"></i><a class="disus-comments"
-                    href="https://blog.geekofia.in{{ post.url }}#disqus_thread"></a>
+                <i class="far fa-calendar-alt"></i>
+                {{ post.date | date_to_string }}
+                <i class="far fa-clock icon-post"></i>
+                {% include reading_time_list.html %}
+                <!-- <i class="fas fa-comments icon-latest-posts"></i><a class="disus-comments"
+                    href="https://blog.geekofia.in{{ post.url }}#disqus_thread"></a> -->
             </p>
             <p> <i class="fas fa-folder"></i>
                 {% for category in post.categories %}

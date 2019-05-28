@@ -29,7 +29,8 @@ button:hover {
 }
 
 .fa-user-edit.icon-post,
-.fa-tags{
+.fa-tags,
+.fa-clock{
     padding-left: 5px;
 }
 
@@ -98,6 +99,20 @@ li.L9 {
     margin: 0 5px;
     padding: 5px;
 } */
+.card-deck{
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.card-deck .card{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.blog-navigation-buttons{
+    display: inline-block;
+    width: inherit;
+}
 
 .prev-post-button,
 .next-post-button {
