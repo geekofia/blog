@@ -1,30 +1,26 @@
-- name: Home
-  link: https://geekofia.in
-  title: GEEKOFIA Home Page
-
 - name: Latest
   link: /
   title: Latest Blog Posts
 
 - name: Android
   link: /category/android/
-  title: Latest Android Posts
+  title: Posts related to android
 
-- name: Programming
-  link: /category/programming/
-  title: Latest Programming Posts
+- name: How To
+  link: /category/guide/
+  title: Latest guide posts
 
-- name: Cyber Security
-  link: /category/cyber-security/
-  title: Latest Cyber Security Blog Posts
+- name: Security
+  link: /category/security/
+  title: Posts related to cyber security
 
 - name: Patches
   link: /category/patches/
-  title: Latest Cyber Security Blog Posts
+  title: All patches posts
 
-- name: CTF
-  link: /category/ctf/
-  title: Latest CTF Posts
+- name: Reviews
+  link: /category/review/
+  title: Product reviews
 
 - name: Miscellaneous
   link: /category/miscellaneous/

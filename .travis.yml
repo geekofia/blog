@@ -1,4 +1,5 @@
 script:
+- gem install bundler:2.0.1
 - bundle update --bundler
 
 deploy:
