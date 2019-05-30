@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+## GEEKOFIA Blog
 
-## <i class="fas fa-blog"></i> GEEKOFIA Blog
+[![Build Status](https://travis-ci.org/GEEKOFIA/blog.svg?branch=master)](https://travis-ci.org/GEEKOFIA/blog)
 
 A non-profit open source blog website to provide quality information through our simple posts, everything related to technology. We focus on the content rather then story telling & styling.
 
