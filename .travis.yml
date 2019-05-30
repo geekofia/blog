@@ -1,0 +1,16 @@
+script:
+- bundle update --bundler
+
+deploy:
+  committer_from_gh: true
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GH_TOKEN"
+  keep_history: true
+  verbose: true
+  on:
+    branch: master
+
+env:
+  global:
+  - secure: R1iIwbOUnHTT6IWpjwfhdNJ92YCMgC94yw0kz5eAHRoOSlEXKXV6BUYajnXJ9+Jrx7V9DY7hwa/WMMVY1aKdMHFmoCleK8rWNew6npLXGGsLcgBQgbsDNQ1Dlq4MoZP0KwtnE4c8Kyxe1604tkf4+R6o4Fg2rKxLxbQzEDPgHYhJDaZRTjJTCPqntoXieDgo8HQTjVhcsXKXnL7DPKYVeLe8AJGHZPhE1TJGsxI0FR8kFmcZwaPLNJnXmInxZmwAvLyzhnbkQl2lsV42wiukfT1Yz33FEP5Z4vGxcCbHLKLqKZFP4Wneus0wFxi7+PSCL8nPIyYoMq58qjl6bng3DBM4+qyv0/4wbTngB2NyyqixVEtJaNHlah7B1o3EpgNdq930SZiyFBnJzqVrPIO2fz+vIGS/C5s5zWTD27W2JeBdYqkSXTHRmcqTtk1Bkn5jRZlQ1jO3a0fkmwSH45xgzoN7chKHWYJazetxV4uAWMxOGg5GFyY70cMsQwwbmwfMzZKlUBa1PsWCdyzvPCNm68AsvaxtXwDhOPGBX8/Wa5Aj6Dah0x5daFeT6OVrPQBpgUOYlWfweQgTXD8JMz7tv9N8s+IYGkkZ1xa4LNz98uGexhiA/LR7zRhKdTI9hW9C28ggNVqcPpuVUw5nefFWhGntHurCU+Zy/EGGoH/pr38=
