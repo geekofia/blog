@@ -41,14 +41,19 @@ a {
 }
 
 a:hover {
-    color: #363636;
+    color: #66BB6A;
 }
 
-mark {
+/* mark {
     background-color: #ff0;
     color: #000
-}
+} */
 
+.page-heading{
+    color: #000;
+    font-size: 36px;
+    font-weight: bold;
+}
 
 .btn-search {
     font-weight: 500;
@@ -73,6 +78,14 @@ mark {
     padding-top: 20px;
 }
 
+.li-post .post-title{
+    color: #000;
+}
+
+.li-post:hover{
+    opacity: 0.6;
+}
+
 .end-of-post {
     font-weight: bold;
     padding-top: 5px;
@@ -95,19 +108,11 @@ mark {
     padding-right: 5px;
 }
 
-.col.post-img-box{
+.col.post-img-box {
     margin: auto;
     max-height: inherit;
     max-width: inherit;
     text-align: center;
-}
-
-.img-fluid {
-    transition: transform .5s;
-}
-
-.img-fluid:hover {
-    transform: scale(1.05);
 }
 
 .icon-share {
@@ -122,24 +127,33 @@ mark {
     padding-top: 5px;
 }
 
-.icon-latest-posts{
+.icon-latest-posts {
     padding-left: 10px !important;
 }
 
 @media (max-width: 1200px) {
     .post-image {
-        max-width: 290px; 
+        max-width: 290px;
     }
 }
 
 @media (max-width: 992px) {
     .post-image {
-        max-width: 210px; 
+        max-width: 210px;
     }
 }
 
 @media (max-width: 768px) {
     .post-image {
-        max-width: 240px; 
+        max-width: 240px;
     }
+}
+
+.preview {
+    padding: 20px 0;
+}
+
+.note {
+    background-color: #f3b244;
+    border-left: 7px solid #dc900e;
 }

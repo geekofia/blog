@@ -9,21 +9,13 @@ comments: true
   <h1>{{ page.title }}</h1>
 </div>
 
-<p>
-  <i class="fas fa-calendar-alt"></i>
-  {{ page.date | date_to_string }}
-  <i class="fas fa-user-edit icon-post"></i>
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-  <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-  <i class="far fa-clock icon-post"></i>
-  {% include post_reading_time.html %}
-</p>
+{% include post_metadata_top.html %}
 
 {{ content }}
 
 <p align="center"><b>o EOP o</b></p>
+
+{% include post_metadata_bottom.html %}
 
 {% include post_navigation.html %}
 
@@ -32,15 +24,7 @@ comments: true
   {% include related_posts.html %}
 
 </div>
-<!-- 
-<div id="disqus_thread"></div>
 
-<script>
-  (function () {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://geekofia-blog.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script> -->
+<!-- {% include comments.html %} -->
+
 <script src="/assets/js/run_prettify.js"></script>

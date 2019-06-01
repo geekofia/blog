@@ -1,31 +1,63 @@
 /*======================
     404 page
 =======================*/
+
 @font-face {
     font-family: 'Arvo';
     src: url('../fonts/Arvo/Arvo-Regular.ttf') format('truetype'),
         url('../fonts/Arvo/Arvo-Bold.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P/PressStart2P-Regular.ttf') format('truetype');
 }
 
-.page_404 {
-    padding-top: 20px;
-    text-align: center;
-    font-family: "Arvo";
+/* 
+* {
+  font-family: 'Press Start 2P', cursive;
+  box-sizing: border-box;
+} */
+
+#app {
+    font-family: 'Press Start 2P', cursive !important;
+    padding: 1rem;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-shadow: 0px 0px 10px;
+    font-size: 6rem;
+    flex-direction: column;
 }
 
-.four_zero_four_bg {
-    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
+#app .txt {
+    font-size: 1.8rem;
 }
 
-.four_zero_four_bg h1 {
-    font-size: 80px;
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.four_zero_four_bg h3 {
-    font-size: 80px;
+.blink {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .link_404 {
@@ -34,15 +66,5 @@
     background: #39ac31;
     margin: 20px 0;
     display: inline-block;
-}
-
-.content_box_404 {
-    margin-top: -80px;
-}
-
-@media (max-width: 1080px) {
-    .four_zero_four_bg {
-        height: 490px;
-    }
-
+    font-family: "Arvo";
 }
