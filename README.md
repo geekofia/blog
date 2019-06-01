@@ -6,14 +6,14 @@ A non-profit open source blog website to provide quality information through our
 
 ### Supported Categories
 
-Keyword | Name          | Topic
---------|---------------|-------------------------------------
-android | Android       | Posts regarding android system, kernel, theme, mod etc.
-security | Cyber Security | Cyber threats, vulnerability, patches, CVE etc.
-guide   | How To | All post regarding any (soft/hard)ware installation, tips and `how_to` tag goes under this category
-miscellaneous | Miscellaneous | All linux, windows, macos related and posts hard to categorize goes under this category
-patches | Patches | Linux/android kernel, networking, openwrt & rest other patches are under this category 
-review | Reviews | Reviews of phone, apps or any tech product
+Keyword | Topic
+--------|-------------------------------------
+Android | Posts regarding android system, kernel, theme, mod etc.
+Guide   | All post regarding any (soft/hard)ware installation, tips and `howto` tag goes under this category
+Programming | Programming tips, development hacks etc.
+Miscellaneous | All linux, windows, macos related and posts hard to categorize goes under this category
+Patches | Linux/android kernel, networking, openwrt & rest other patches are under this category 
+Review | Reviews of phone, apps or any tech product
 
 Categories are not going to change frequently, but still you are welcome to suggets if there is more relevant keywords then supported one.
 
@@ -25,12 +25,12 @@ Tags can fall under more than categories.
 
 Categories | Relevant Tags
 -----------|-------------------------------------
-android | `app`,`compiation_error`,`hack`, `kernel`
-guide | `linux`, `django`, `programming`
-review | `app`, `kernel`
-patches | `kernel`, `linux`
-security | `hack`, `patch`
-miscellaneous | any tags you can add (may / maynot supported but you can add to post)
+Android | `app`,`compiation_error`,`hack`, `kernel`
+Guide | `linux`, `django`
+Programming | `howto`
+Review | `app`, `kernel`
+Patches | `kernel`, `linux`
+Miscellaneous | any tags you can add (may / maynot supported but you can add to post)
 
 You can suggest new tags by creating a new issue [here](https://github.com/GEEKOFIA/blog/issues). The tag most be unique then suported ones. **Read how to name a issue for adding a tag [here](.github/CONTRIBUTING.md#suggesting-tags).**
 

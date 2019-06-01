@@ -20,7 +20,7 @@
                 {% endfor %}
               </p>
               
-            <p>{{ post.excerpt }}</p>
+            <p>{{ post.content | strip_html | truncatewords:50}}</p>
         </div>
         <div class="post-img-box col">
             <img src="{{ post.thumbnail }}" class="post-image">

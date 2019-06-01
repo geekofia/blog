@@ -7,23 +7,23 @@
   title: Posts related to android
 
 - name: How To
-  link: /category/guide/
-  title: Latest guide posts
+  link: /category/Guide/
+  title: Latest Guide posts
 
-- name: Security
-  link: /category/security/
-  title: Posts related to cyber security
+- name: Programming
+  link: /category/Programming/
+  title: Posts related to Programmming & development
 
 - name: Patches
-  link: /category/patches/
-  title: All patches posts
+  link: /category/Patches/
+  title: All Patches posts
 
 - name: Reviews
-  link: /category/review/
-  title: Product reviews
+  link: /category/Review/
+  title: Product Reviews
 
 - name: Miscellaneous
-  link: /category/miscellaneous/
+  link: /category/Miscellaneous/
   title: Miscellaneous Blog Posts
 
 - name: Authors
