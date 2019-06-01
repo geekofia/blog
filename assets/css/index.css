@@ -97,19 +97,17 @@ mark {
 
 .col.post-img-box{
     margin: auto;
-    max-height: 240px;
+    max-height: inherit;
     max-width: inherit;
     text-align: center;
 }
 
-.post-image {
-    max-height: inherit;
-    max-width: inherit;
+.img-fluid {
     transition: transform .5s;
 }
 
-.post-image:hover {
-    transform: scale(1.2);
+.img-fluid:hover {
+    transform: scale(1.05);
 }
 
 .icon-share {
