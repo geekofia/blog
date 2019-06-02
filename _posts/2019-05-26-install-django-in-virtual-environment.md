@@ -2,10 +2,10 @@
 title:  "How to install Django in virtual environment"
 author: chankruze
 date:   2019-05-26 13:58:12 +0530
-categories: [Guide, Programming]
+categories: [Guide]
 tags: [HowTo, Django, Python]
 thumbnail: /assets/images/thumbnails/django.jpg
-#excerpt_separator: <!--excerpt-->
+desc: "install Django in virtual environment"
 ---
 Hello fellas, in this post we are going to see how we can install django in a virtual environment instead of installing to our workspace.
 Before we begin i want to let you know that there are several ways to install django. Ofiicial installation doc is available [here](https://docs.djangoproject.com/en/2.2/intro/install/). Let's begin ...

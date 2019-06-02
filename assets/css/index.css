@@ -3,6 +3,7 @@
 @import "navigation.css";
 @import "footer.css";
 @import "animation.css";
+@import "search.css";
 
 /** import fonts **/
 @font-face {
@@ -49,9 +50,13 @@ a:hover {
     color: #000
 } */
 
-.page-heading{
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-heading {
     color: #000;
-    font-size: 36px;
+    font-size: 42px;
     font-weight: bold;
 }
 
@@ -78,11 +83,11 @@ a:hover {
     padding-top: 20px;
 }
 
-.li-post .post-title{
+.li-post .post-title {
     color: #000;
 }
 
-.li-post:hover{
+.li-post:hover {
     opacity: 0.6;
 }
 
@@ -153,7 +158,26 @@ a:hover {
     padding: 20px 0;
 }
 
-.note {
+.note-y {
     background-color: #f3b244;
     border-left: 7px solid #dc900e;
+}
+
+.note-r {
+    background-color: #e45454;
+    border-left: 7px solid #cb2020;
+}
+
+.note-g {
+    background-color: #48c461;
+    border-left: 7px solid #2f9142;
+}
+
+.note-g code,
+.note-y code,
+.note-g code {
+    color: white;
+    border: 1px dashed white;
+    border-radius: 4px;
+    padding: 2px 5px;
 }

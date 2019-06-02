@@ -63,7 +63,7 @@ defaults:
       type: category
     values:
       layout: "category"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+  # - scope:
+  #     path: ""
+  #   values:
+  #     layout: "default"

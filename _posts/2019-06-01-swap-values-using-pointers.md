@@ -5,7 +5,7 @@ date:   2019-06-01 23:30:33 +0530
 categories: [Programming]
 tags: [HowTo, C]
 thumbnail: /assets/images/thumbnails/swap_by_reference.png
-#excerpt_separator: <!--excerpt-->
+desc: "C function to swap two numbers"
 ---
 Well we can swap the values of 2 variables in C by using a temporary variable.
 
@@ -19,7 +19,7 @@ You can also ask the user to input the value sfor the variables, but for the sha
 
 
 ```bash
-Input : x = 10, y = 20;
+Input : x = 10, y = 20
 Output : x = 20, y = 10
 ```
 

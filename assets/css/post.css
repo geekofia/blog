@@ -24,14 +24,14 @@ button:hover {
 .fa-calendar,
 .fa-user-edit,
 .fa-folder {
-    padding-right: 5px;
+    /* padding-right: 5px; */
     font-size: 1.2em;
 }
 
 .fa-user-edit.icon-post,
 .fa-tags,
 .fa-clock {
-    padding-left: 5px;
+    /* padding-left: 5px; */
 }
 
 /* pre.prettyprint{

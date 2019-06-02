@@ -1,11 +1,11 @@
 ---
-title:  "Workaround to fix unexpected token at start of statement error with clang"
+title:  "Fix unexpected token at start of statement error with clang"
 author: chankruze
 date:   2019-05-20 07:27:34 +0530
 categories: [Android, Patches]
 tags: [Kernel, CompilationError]
 thumbnail: /assets/images/thumbnails/01.png
-#excerpt_separator: <!--excerpt-->
+desc: "Work around to fix unexpected tocken error"
 ---
 My life is a litle bit weired. I never got success on first attempt, there is always some errors, bugs. So, now-a-days seeing an error
 is a normal thing for me. To be honest i think if there were no struggle to get things working, maybe i couldn't be here. Now come to the
