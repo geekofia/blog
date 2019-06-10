@@ -135,3 +135,49 @@ li.L9 {
 .metadata a:hover {
     color: #007BFF;
 }
+
+.note {
+    padding: 10px;
+    color: #fff;
+}
+
+.note a {
+    color: #fff;
+}
+
+.note a:hover {
+    color: #000;
+}
+
+.note.y {
+    background-color: #f3b244;
+    border-left: 7px solid #dc900e;
+}
+
+.note.r {
+    background-color: #e45454;
+    border-left: 7px solid #cb2020;
+}
+
+.note.g {
+    background-color: #48c461;
+    border-left: 7px solid #2f9142;
+}
+
+.note.g code,
+.note.y code,
+.note.g code {
+    color: white;
+    border: 1px dashed white;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+h5{
+    margin: 20px 0 10px 0;
+    color: #287a38;
+}
+
+strong{
+    font-weight: bold;
+}

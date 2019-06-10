@@ -136,7 +136,7 @@ p {
     padding-left: 10px !important;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .post-image {
         max-width: 290px;
     }
@@ -152,32 +152,16 @@ p {
     .post-image {
         max-width: 240px;
     }
-}
+} */
 
 .preview {
     padding: 20px 0;
 }
 
-.note-y {
-    background-color: #f3b244;
-    border-left: 7px solid #dc900e;
-}
-
-.note-r {
-    background-color: #e45454;
-    border-left: 7px solid #cb2020;
-}
-
-.note-g {
-    background-color: #48c461;
-    border-left: 7px solid #2f9142;
-}
-
-.note-g code,
-.note-y code,
-.note-g code {
-    color: white;
-    border: 1px dashed white;
-    border-radius: 4px;
-    padding: 2px 5px;
+.content a:not([href*='geekofia.in']):not([href^='#']):not([href^='/']):after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    /* 900 (Solid), 400 (Regular or Brands), 300 (Light) */
+    content: " \f35d";
+    /* fa-external-link-alt */
 }
