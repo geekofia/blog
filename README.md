@@ -9,7 +9,7 @@ A non-profit open source blog website to provide quality information through our
 Keyword | Topic
 --------|-------------------------------------
 Android | Posts regarding android system, kernel, theme, mod etc.
-Guide   | All post regarding any (soft/hard)ware installation, tips and `howto` tag goes under this category
+HowTo   | All post regarding any (soft/hard)ware installation, tips goes under this category
 Programming | Programming tips, development hacks etc.
 Miscellaneous | All linux, windows, macos related and posts hard to categorize goes under this category
 Patches | Linux/android kernel, networking, openwrt & rest other patches are under this category 
@@ -26,8 +26,8 @@ Tags can fall under more than categories.
 Categories | Relevant Tags
 -----------|-------------------------------------
 Android | `app`,`compiation_error`,`hack`, `kernel`
-Guide | `linux`, `django`
-Programming | `howto`
+HowTo | `linux`, `django`
+Programming | `C`, `CSS`
 Review | `app`, `kernel`
 Patches | `kernel`, `linux`
 Miscellaneous | any tags you can add (may / maynot supported but you can add to post)

@@ -1,9 +1,9 @@
 ---
-title:  "Setting Up Flutter For Web Dev"
+title:  "How To Set Up Flutter For Web Development"
 author: chankruze
 date:   2019-06-11 03:10:44 +0530
-categories: [Guide]
-tags: [HowTo, Flutter, Dart]
+categories: [HowTo]
+tags: [Flutter, Dart]
 thumbnail: https://icircuit.net/wp-content/uploads/2019/03/Google-flutter-logo-1.png
 desc: "Setting Up Flutter For Web Dev"
 ---
