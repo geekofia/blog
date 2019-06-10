@@ -159,7 +159,7 @@
               resultsContainer: null,
               json: [],
               success: Function.prototype,
-              searchResultTemplate: '<a href="{url}" title="{desc}" class="dropdown-item results-dropdown">{title}<br><span>{date}</span></a>',
+              searchResultTemplate: '<a href="{url}" title="{desc}" class="dropdown-item results-dropdown">{title}<br><small>{date}</small></a>',
               templateMiddleware: Function.prototype,
               sortMiddleware: function() {
                   return 0
