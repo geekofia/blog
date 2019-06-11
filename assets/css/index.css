@@ -165,3 +165,8 @@ p {
     content: " \f35d";
     /* fa-external-link-alt */
 }
+
+.img-fluid{
+    max-height: 240px;
+    margin: auto;
+}
