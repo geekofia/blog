@@ -68,3 +68,11 @@
     display: inline-block;
     font-family: "Arvo";
 }
+
+footer{
+    display: none;
+}
+
+.content{
+    border: none;
+}

@@ -140,6 +140,7 @@ li.L9 {
 .note {
     padding: 10px;
     color: #fff;
+    font-size: 1em;
 }
 
 .note a {
@@ -177,6 +178,7 @@ li.L9 {
 h5 {
     margin: 20px 0 10px 0;
     color: #287a38;
+    font-size: 1.3em;
 }
 
 strong {
