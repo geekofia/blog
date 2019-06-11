@@ -13,7 +13,6 @@ HowTo   | All post regarding any (soft/hard)ware installation, tips goes under t
 Programming | Programming tips, development hacks etc.
 Miscellaneous | All linux, windows, macos related and posts hard to categorize goes under this category
 Patches | Linux/android kernel, networking, openwrt & rest other patches are under this category 
-Review | Reviews of phone, apps or any tech product
 
 Categories are not going to change frequently, but still you are welcome to suggets if there is more relevant keywords then supported one.
 
@@ -25,11 +24,10 @@ Tags can fall under more than categories.
 
 Categories | Relevant Tags
 -----------|-------------------------------------
-Android | `app`,`compiation_error`,`hack`, `kernel`
-HowTo | `linux`, `django`
+Android | `App`,`CompiationError`,`Hack`, `Kernel`
+HowTo | `Linux`, `Django`, `Guide`
 Programming | `C`, `CSS`
-Review | `app`, `kernel`
-Patches | `kernel`, `linux`
+Patches | `Kernel`, `Linux`
 Miscellaneous | any tags you can add (may / maynot supported but you can add to post)
 
 You can suggest new tags by creating a new issue [here](https://github.com/GEEKOFIA/blog/issues). The tag most be unique then suported ones. **Read how to name a issue for adding a tag [here](.github/CONTRIBUTING.md#suggesting-tags).**
