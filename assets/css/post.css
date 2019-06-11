@@ -39,12 +39,13 @@ button:hover {
     background: #EEE;
 } */
 
-code.highlighter-rouge{
+code.highlighter-rouge {
     color: #000;
     padding: 2px 5px;
     background: #EEEEEE;
     border-radius: 5px;
-} 
+}
+
 /* 
 .highlighter-rouge .highlight pre {
     padding: 10px;
@@ -173,11 +174,19 @@ li.L9 {
     padding: 2px 5px;
 }
 
-h5{
+h5 {
     margin: 20px 0 10px 0;
     color: #287a38;
 }
 
-strong{
+strong {
     font-weight: bold;
+}
+
+.toolbar-item a::after {
+    display: none;
+}
+
+.metadata .social-share{
+    padding: 0;
 }
