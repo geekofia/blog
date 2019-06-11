@@ -3,11 +3,10 @@ script:
 - bundle update --bundler
 
 deploy:
-  committer_from_gh: true
   provider: pages
+  fqdn: blog.geekofia.in
   skip_cleanup: true
   github_token: "$GH_TOKEN"
-  keep_history: true
   verbose: true
   on:
     branch: master
