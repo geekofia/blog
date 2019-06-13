@@ -18,7 +18,7 @@ email: chankruze@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog Domain Of GEEKOFIA.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.geekofia.in" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chankruze
 github_username:  chankruze
 
