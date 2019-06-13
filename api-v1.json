@@ -9,7 +9,7 @@ permalink: "api/v1/"
             "date"     : "{{ post.date | date: '%B %d, %Y' }}",
             "category" : "{{ post.categories | join: ',' }}",
             "tags"     : "[{{ post.tags | join: ',' }}]",
-            "thumbnail": "{{ site.url }}{{ site.baseurl }}{{ post.thumbnail }}",
+            "thumbnail": "{{ site.baseurl }}{{ post.thumbnail }}",
             "desc"     : "{{ post.desc }}",
             "url"      : "{{ site.url }}{{ site.baseurl }}{{ post.url }}"
         } {% unless forloop.last %},{% endunless %}
