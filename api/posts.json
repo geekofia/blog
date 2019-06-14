@@ -1,0 +1,15 @@
+---
+permalink: "api/v2/posts/"
+---
+[
+    {% for post in site.posts %}
+        {
+            "title"    : "{{ post.title | escape }}",
+            "author"   : "{% assign author = site.authors | where: 'short_name', page.author | first %}{% if author %}{{ author.name | escape }}{% endif %}",
+            "date"     : "{{ post.date | date: '%B %d, %Y' }}",
+            "thumbnail": "{{ site.baseurl }}{{ post.thumbnail }}",
+            "desc"     : "{{ post.desc }}",
+            "url"      : "{{ site.url }}{{ site.baseurl }}{{ post.url }}"
+        } {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]

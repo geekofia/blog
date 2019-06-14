@@ -1,0 +1,12 @@
+---
+permalink: "api/v2/authors/"
+---
+[
+    {% for author in site.authors %}
+    {% assign filtered_posts = site.posts | where: 'author', author.short_name %}
+    {
+        "author"  : "{{ author.name }}",
+        "posts": [{% for post in filtered_posts %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]

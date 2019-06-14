@@ -1,0 +1,12 @@
+---
+permalink: "api/v2/tags/"
+---
+[
+    {% for tag in site.tags %}
+    {% assign foo = tag[0] %}
+    {
+        "tag"  : "{{ tag[0] }}",
+        "posts": [{% for post in site.tags[foo] %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]
