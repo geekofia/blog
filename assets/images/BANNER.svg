@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?><!-- Generator: Gravit.io -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 1280 640" width="1280" height="640">
+    <defs>
+        <clipPath id="_clipPath_8IcDWEvQm1seOFRO5PqLhej0JrYT0n1z">
+            <rect width="1280" height="640"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#_clipPath_8IcDWEvQm1seOFRO5PqLhej0JrYT0n1z)">
+        <linearGradient id="_lgradient_0" x1="0.4999999999999999" y1="0" x2="0.5000000000000002" y2="1">
+            <stop offset="1.7391304347826086%" style="stop-color:#74EBD5"/>
+            <stop offset="100%" style="stop-color:#ACB6E5"/>
+            <stop offset="100%" style="stop-color:#0575E6"/>
+            <stop offset="100%" style="stop-color:#185A9D"/>
+            <stop offset="100%" style="stop-color:#000000"/>
+        </linearGradient>
+        <rect width="1280" height="640" style="fill:url(#_lgradient_0);"/>
+        <g transform="matrix(1,0,0,1,62,120)">
+            <text transform="matrix(1,0,0,1,0,150)" style="font-family:'Orbitron';font-weight:900;font-size:200px;font-style:normal;fill:#000000;stroke:none;">GEEKOFIA</text>
+        </g>
+        <g transform="matrix(1,0,0,1,312,320)">
+            <text transform="matrix(1,0,0,1,0,150)" style="font-family:'Orbitron';font-weight:900;font-size:200px;font-style:normal;fill:#000000;stroke:none;">BLOG</text>
+        </g>
+    </g>
+</svg>

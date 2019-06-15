@@ -10,8 +10,7 @@ body {
 
 #notfound {
     position: relative;
-    height: 100vh;
-    background-color: #fafbfd;
+    height: calc(100vh - 190px);
 }
 
 #notfound .notfound {

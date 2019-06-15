@@ -1,4 +1,8 @@
 /* ===== Nav & Navbar ===== */
+.navbar {
+    position: sticky;
+    z-index: 1030;
+}
 
 .navbar-nav .nav-item {
     padding-left: 10px;
@@ -22,4 +26,54 @@
 
 .nav-pills {
     margin-top: 10px;
+}
+
+#header {
+    color: #000;
+    text-align: center;
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search-input{
+    border: none;
+    color: #FFF;
+    background: transparent !important;
+    border-radius: 0px !important; 
+    border-bottom: 2px solid #FFF !important;
+    padding-left: 5px;
+    width: 460px;
+    display: none;
+}
+
+.fa-search,
+.fa-times{
+    color: #FFF;
+    font-size: 1.5em;
+}
+.fa-times:hover{
+    color: #f00;
+}
+
+.fa-search:hover{
+    color: #0f0;
+}
+
+.hidden{
+    display: none;
+}
+
+::placeholder{
+    color: #FFF !important;
+    opacity: 1;
+}
+
+.dropdown-menu.container{
+    margin: 100px;
+}
+
+@media (max-width: 576px) {
+    #search-input{
+        width: calc(100% - 20px);
+    }
 }
