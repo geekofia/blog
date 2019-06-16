@@ -10,9 +10,9 @@ desc: "Setting Up Flutter For Web Dev"
 Hi there, as you all know flutter for web technical preview is now launched at Google I/O19, we are now able to build web pages with flutter.
 But to able to build our first flutter web page, we need to set it up `dart` & `pub global` first.
 
-<p class="note g">
+{: .note .g}
 Pub’s global option allows you to run Dart scripts from the command line when you are not currently inside a package. After activating a package, you can run scripts from that package’s bin directory. Deactivating a package removes it from your list of globally available packages. <a href="https://dart.dev/tools/pub/cmd/pub-global" target="_blank">More</a>
-</p>
+
 
 ### Prerequisites
 - flutter >= 1.5.4 (you can use stable it is 1.5.4)
@@ -49,18 +49,19 @@ echo 'export PATH=$PATH:/usr/lib/dart/bin' >> ~/.bashrc
 
 ##### 04: Activate `webdev`
 
-<p class="note y">
+{: .note .y}
 Webdev is a command-line tool for developing and deploying web applications with Dart. <a href="https://pub.dev/packages/webdev" target="_blank">More</a>
-</p>
+
 To activate it run below code:
 
 ```bash
 pub global activate webdev
 ```
 It will take some time to resolve dependencies & log their versions to terminal. If you get a warning like below note
-<p class="note r">
+
+{: .note .r}
 Warning: Pub installs executables into $HOME/.pub-cache/bin, which is not on your path.
-</p>
+
 Well now you now know what to do !
 
 ##### 05: Add pub to PATH
