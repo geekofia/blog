@@ -88,9 +88,10 @@ p {
     color: #000;
 }
 
-/* .li-post:hover {
+
+.li-post:hover {
     opacity: 0.6;
-} */
+}
 
 .end-of-post {
     font-weight: bold;
