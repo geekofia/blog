@@ -1,4 +1,4 @@
 ---
 folder: Patches
-permalink: /category/Patches/
+permalink: /categories/Patches/
 ---

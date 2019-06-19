@@ -1,4 +1,4 @@
 ---
 folder: HowTo
-permalink: /category/HowTo/
+permalink: /categories/HowTo/
 ---

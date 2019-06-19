@@ -46,6 +46,8 @@ collections:
     output: true
   category:
     output: true
+  tag:
+    output: true
 
 defaults:
   - scope:
@@ -63,6 +65,11 @@ defaults:
       type: category
     values:
       layout: "category"
+  - scope:
+      path: ""
+      type: tag
+    values:
+      layout: "tag"
   # - scope:
   #     path: ""
   #   values:

@@ -1,4 +1,4 @@
 ---
 folder: Programming
-permalink: /category/Programming/
+permalink: /categories/Programming/
 ---

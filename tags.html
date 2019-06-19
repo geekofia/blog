@@ -1,7 +1,6 @@
 ---
 layout: default
 title: GEEKOFIA | Tags
-x: Kernel
 permalink: /tags/
 ---
 {% for tag in site.tags %}
@@ -14,7 +13,7 @@ permalink: /tags/
     {% for post in site.tags[foo] %}
     <li>
         <h5>
-            {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a> - <small>{{ post.date | date: "%B %d, %Y" }}</small>
         </h5>
     </li>
     {% endfor %}

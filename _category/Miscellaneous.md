@@ -1,4 +1,4 @@
 ---
 folder: Miscellaneous
-permalink: /category/Miscellaneous/
+permalink: /categories/Miscellaneous/
 ---

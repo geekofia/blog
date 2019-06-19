@@ -1,4 +1,4 @@
 ---
 folder: Android
-permalink: /category/Android/
+permalink: /categories/Android/
 ---
