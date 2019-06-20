@@ -6,9 +6,9 @@
   link: /categories/
   title: Grouped By Used Categories
 
-- name: Tags
-  link: /tags/
-  title: Grouped By Used Tags
+# - name: Tags
+#   link: /tags/
+#   title: Grouped By Used Tags
 
 
 # - name: Android
@@ -31,9 +31,9 @@
 #   link: /category/Miscellaneous/
 #   title: Miscellaneous Blog Posts
 
-# - name: Authors
-#   link: /authors/
-#   title: About Our Authors
+- name: Authors
+  link: /authors/
+  title: About Our Authors
 
 # - name: Contact
 #   link: /contact/
