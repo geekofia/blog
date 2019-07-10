@@ -11,7 +11,7 @@
         <li class="list-inline-item">
             <i class="far fa-folder icon-post"></i>
             {% for category in page.categories %}
-            <a href="/category/{{ category }}/">{{ category }}</a>
+            <a href="/categories/{{ category }}/">{{ category }}</a>
             {% if forloop.last == false %}|{% endif %}
             {% endfor %}
         </li>

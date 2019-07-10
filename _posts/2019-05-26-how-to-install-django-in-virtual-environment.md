@@ -3,7 +3,6 @@ title:  "How To Install Django in Virtual Environment"
 author: chankruze
 date:   2019-05-26 13:58:12 +0530
 categories: [HowTo]
-tags: [Django, Python]
 thumbnail: /assets/images/thumbnails/django.jpg
 desc: "install Django in virtual environment"
 ---

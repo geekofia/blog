@@ -10,7 +10,6 @@
 #   link: /tags/
 #   title: Grouped By Used Tags
 
-
 # - name: Android
 #   link: /category/Android/
 #   title: Posts related to android
@@ -35,6 +34,6 @@
   link: /authors/
   title: About Our Authors
 
-# - name: Contact
-#   link: /contact/
-#   title: Reach us
+- name: Contact
+  link: /contact/
+  title: Reach us

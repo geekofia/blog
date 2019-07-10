@@ -6,6 +6,7 @@ permalink: "api/v2/categories/"
     {% assign CURRENT_CATEGORY = category[0] %}
     {
         "category"  : "{{ category[0] }}",
+        "logo" : "fab fa-{{category[0] | downcase }}",
         "posts": [
             {% for post in site.categories[CURRENT_CATEGORY] %}
                 {
