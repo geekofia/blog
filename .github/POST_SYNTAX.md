@@ -108,4 +108,17 @@ Add `{: .align-center}` just above the image line. For example, below snippet:
 ```
 Remember to add `#img-fluid` to end of your image url. (**IMPORTANT**)
 
-***More Will Be Added Soon ....***
+## Add Custom Image Grid
+Use this usually, when you are going to show >3 images or screenshots.
+
+Example usage: [Here](https://blog.geekofia.in/android/2019/07/11/mx-player-pro.html#screenshots)
+
+```markdown
+{: .screenshot-container}
+![alt-text](https://blog.geekofia.in){: .screenshots}
+```
+
+Remember to add `{: .screenshots}` to end of your image url line like avove one. (**IMPORTANT**)
+
+
+***More Will Be Added When Implemented ....***
