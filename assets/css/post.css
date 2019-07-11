@@ -175,6 +175,16 @@ li.L9 {
     padding: 2px 5px;
 }
 
+h4{
+    margin: 20px 0 10px 0;
+    color: #287a38;
+    font-size: 1.5em;
+}
+
+h4:before{
+    content: "# ";
+}
+
 h5 {
     margin: 20px 0 10px 0;
     color: #287a38;
@@ -201,5 +211,49 @@ img[src$='#img-fluid'] {
 }
 
 .align-center{
-    text-align: center;
+    text-align: center;    
 }
+
+@media (min-width: 576px) {
+    .align-center img{
+        max-width: 376px;
+    }
+}
+
+@media (min-width: 768px) {
+    .align-center img{
+        max-width: 568px;
+    }
+}
+
+@media (min-width: 992px) {
+    .align-center img{
+        max-width: 792px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .align-center img{
+        max-width: 1000px;
+    }
+}
+
+.screenshots {
+    float: left;
+    width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 30px;
+}
+
+.screenshot-container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* .screenshots img{
+    display: block;
+    max-width:512px;
+    max-height:512px;
+    width: auto;
+    height: auto;
+} */
