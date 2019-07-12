@@ -1,7 +1,7 @@
 ---
 title: "MX Player Pro Universal Patched APK [v1.11.6]"
 author: chankruze
-date: 2019-07-12 03:01:37 +0530
+date: 2019-07-12 03:01:37 +05:30
 categories: [Android]
 thumbnail: /assets/images/thumbnails/mx-player.png
 desc: "MX Player Pro 1.11.6 Patched APK For All Devices"

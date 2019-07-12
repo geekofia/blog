@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.geekofia.in" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chankruze
 github_username:  chankruze
+timezone: Asia/Kolkata
 
 # Build settings
 markdown: kramdown

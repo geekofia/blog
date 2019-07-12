@@ -1,7 +1,7 @@
 ---
 title:  "How To Swap Two Numbers in C using Pointers"
 author: chankruze
-date:   2019-06-01 23:30:33 +0530
+date:   2019-06-01 23:30:33 +05:30
 categories: [Programming, HowTo]
 thumbnail: /assets/images/thumbnails/swap_by_reference.png
 desc: "C function to swap two numbers"

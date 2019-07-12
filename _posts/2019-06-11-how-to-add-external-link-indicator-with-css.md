@@ -1,7 +1,7 @@
 ---
 title:  "How To Add External Link Indicator With CSS"
 author: chankruze
-date:   2019-06-11 10:04:19 +0530
+date:   2019-06-11 10:04:19 +05:30
 categories: [Programming, HowTo]
 thumbnail: /assets/images/thumbnails/external-icon.png
 desc: "Add an external link indicator with CSS to anchor tags"

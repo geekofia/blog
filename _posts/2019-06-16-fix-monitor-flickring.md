@@ -1,7 +1,7 @@
 ---
 title:  "Fix HDMI Monitor Blinking Issue With Ubuntu"
 author: chankruze
-date:   2019-06-16 21:20:07 +0530
+date:   2019-06-16 21:20:07 +05:30
 categories: [HowTo]
 thumbnail: /assets/images/thumbnails/hdmi-001.png
 desc: "Fix HDMI monitor flashing/blinking/flickring"

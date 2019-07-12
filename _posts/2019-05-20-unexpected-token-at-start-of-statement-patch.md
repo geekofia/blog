@@ -1,7 +1,7 @@
 ---
 title:  "Fix unexpected token at start of statement error with clang"
 author: chankruze
-date:   2019-05-20 07:27:34 +0530
+date:   2019-05-20 07:27:34 +05:30
 categories: [Android, Patches]
 thumbnail: /assets/images/thumbnails/01.png
 desc: "Work around to fix unexpected tocken error"
