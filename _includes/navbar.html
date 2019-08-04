@@ -1,4 +1,5 @@
-<span id="welcome" class="d-block px-3 py-2 text-center text-white bg-danger old-bv">Welcome to Geekofia Blog beta preview !</span>
+<span id="welcome" class="d-block px-3 py-2 text-center text-white bg-danger old-bv">Welcome to Geekofia Blog beta
+    preview !</span>
 
 <header class="navbar navbar-expand navbar-dark bg-dark flex-column flex-md-row bd-navbar">
     <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
@@ -19,16 +20,11 @@
     </div>
 
     <form class="form-inline my-2 my-lg-0" id="search-form">
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="search-icon"><i class="fas fa-search"></i></span>
-            </div>
-            <input class="form-control" type="search"
-                placeholder="search posts in {{ site.url | remove: 'https://' | remove: 'http://'}}" aria-label="Search"
-                data-toggle="dropdown" id="search-input" aria-haspopup="true" aria-expanded="false" autocomplete="off"
-                aria-describedby="search-icon">
-            <div class="dropdown-menu container" id="search-results"></div>
-        </div>
+        <input class="form-control" type="search"
+            placeholder="search posts in {{ site.url | remove: 'https://' | remove: 'http://'}}" aria-label="Search"
+            data-toggle="dropdown" id="search-input" aria-haspopup="true" aria-expanded="false" autocomplete="off"
+            aria-describedby="search-icon">
+        <div class="dropdown-menu container" id="search-results"></div>
     </form>
 
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
