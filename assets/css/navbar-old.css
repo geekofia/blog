@@ -1,7 +1,8 @@
 /* ===== Nav & Navbar ===== */
 .navbar {
     position: sticky;
-    z-index: 1030;
+    top: 0;
+    z-index: 1071;
 }
 
 .navbar-nav .nav-item {
@@ -26,13 +27,6 @@
 
 .nav-pills {
     margin-top: 10px;
-}
-
-#header {
-    color: #000;
-    text-align: center;
-    background: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #search-input{

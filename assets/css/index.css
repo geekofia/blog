@@ -1,6 +1,6 @@
 /** import indivisual CSS **/
 
-@import "navigation.css";
+@import "navbar.css";
 @import "footer.css";
 @import "animation.css";
 @import "search.css";
@@ -15,7 +15,6 @@
 body {
     font-family: 'Google Sans', 'Courier New', Courier, monospace;
     text-transform: capitalize;
-    height: 100vh;
 }
 
 ::-webkit-scrollbar {

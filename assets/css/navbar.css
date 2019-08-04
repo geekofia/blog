@@ -1,0 +1,152 @@
+.bd-navbar {
+    min-height: 4rem;
+    /* background-color: #563d7c; */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+}
+
+@media (min-width: 768px) {
+    .bd-navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1071;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .bd-navbar {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.bd-navbar .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #cbbde2;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-link i {
+    font-size: 1.5em;
+}
+
+.bd-navbar .navbar-nav-svg {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+}
+
+/* svg:not(:root) {
+    overflow: hidden;
+} */
+
+.p-2 {
+    padding: .5rem !important;
+}
+
+.logo-icon {
+    font-size: 1.5em;
+}
+
+#search-form {
+    margin: auto;
+    border: 1px solid #FFF;
+    background: transparent;
+    width: 500px;
+}
+
+#search-input{
+    border: none;
+    color: #FFF;
+    background: transparent;
+    box-shadow: none !important;
+    width: calc(100vh - 510px);
+}
+
+#search-icon{
+    padding-right: 5 !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.fa-search{
+    color: #FFF;
+    font-size: 1em;
+}
+
+#welcome{
+    max-height: 35px;
+}
+
+@media (max-width: 353px) {
+    #search-form,
+    #welcome,
+    .bd-navbar{
+        display: none !important;
+    }
+}
+
+@media (min-width: 353px) and (max-width: 762px) {
+    #search-form {
+        max-width: 100%;
+    }
+
+    #search-input {
+        max-width: calc(100% - 39px);
+    }
+
+    .bd-navbar {
+        position: unset;
+    }
+
+}
+
+@media (min-width: 762px) and (max-width: 795px) {
+    #search-form {
+        max-width: 30%;
+    }
+
+    #search-input {
+        max-width: calc(100% - 275px);
+    }
+}
+
+@media (min-width: 796px) and (max-width: 895px) {
+    #search-form {
+        max-width: 300px;
+    }
+
+    #search-input {
+        max-width: calc(100% - 200px);
+    }
+}
+
+@media (min-width: 895px) and (max-width: 992px) {
+    #search-form {
+        max-width: 400px;
+    }
+
+    #search-input {
+        max-width: calc(100% - 100px);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #search-form {
+        min-width: 500px;
+    }
+}

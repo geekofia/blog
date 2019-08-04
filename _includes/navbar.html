@@ -1,59 +1,68 @@
-<!-- <div id="header">
-    <div class="container">Welcome To Geekofia's Official Blog !</div>
-</div> -->
+<span id="welcome" class="d-block px-3 py-2 text-center text-white bg-danger old-bv">Welcome to Geekofia Blog beta preview !</span>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="test">
-    <div class="container">
-        <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}"><i class="fas fa-blog"></i> GEEKOFIA #Blog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="navbar navbar-expand navbar-dark bg-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+        <i class="fas fa-robot logo-icon"></i>
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                {% for item in site.data.navigation %}
-                <li class="nav-item">
-                    <a href="{{ item.link }}" class="nav-link" data-toggle="tooltip" title="{{ item.title }}"
-                        {% if page.url == item.link %}style="color: #FFF;" {% endif %}>
-                        {{ item.name }}
-                    </a>
-                </li>
-                {% endfor %}
-                <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Posts by tags">
-                    Tags
+    <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            {% for item in site.data.navigation %}
+            <li class="nav-item">
+                <a href="{{ item.link }}" class="nav-link" data-toggle="tooltip" title="{{ item.title }}"
+                    {% if page.url == item.link %}style="color: #FFF;" {% endif %}>
+                    {{ item.name }}
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    {% for tag in site.tags %}
-                    <a href="/tags/{{ tag[0] }}/" class="dropdown-item">
-                        {{ tag[0] }}
-                    </a>
-                    {% endfor %}
-                </div>
-            </li> -->
-            </ul>
-
-            <!-- <div class="nav nav-social">
-            <a class="nav-item" href="https://github.com/chankruze" target="_blank"><i class="fab fa-github"></i></a>
-            <a class="nav-item" href="https://instagram.com/chankruze" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
-            <a class="nav-item" href="https://t.me/geekofia" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-        </div> -->
-
-            <form class="form-inline my-2 my-lg-0">
-                <i class="fas fa-search button-search"></i>
-                <input class="form-control mr-sm-2" type="search" placeholder="search in {{ site.url }}"
-                    aria-label="Search" data-toggle="dropdown" id="search-input" aria-haspopup="true"
-                    aria-expanded="false" autocomplete="off">
-                <i class="fas fa-times button-close hidden"></i>
-                <div class="dropdown-menu container" id="search-results"></div>
-            </form>
-
-        </div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
-</nav>
+
+    <form class="form-inline my-2 my-lg-0" id="search-form">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <input class="form-control" type="search"
+                placeholder="search posts in {{ site.url | remove: 'https://' | remove: 'http://'}}" aria-label="Search"
+                data-toggle="dropdown" id="search-input" aria-haspopup="true" aria-expanded="false" autocomplete="off"
+                aria-describedby="search-icon">
+            <div class="dropdown-menu container" id="search-results"></div>
+        </div>
+    </form>
+
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <!-- <li class="nav-item dropdown">
+            <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                v4.0
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+                <a class="dropdown-item" href="/docs/4.1/">Latest (v4.1.x)</a>
+                <a class="dropdown-item active" href="/docs/4.0/">v4.0.0</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+                <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
+                <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+            </div>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link p-2" href="https://github.com/geekofia" target="_blank"><i
+                    class="fab fa-github"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-2" href="https://instagram.com/geekofia" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-2" href="https://t.me/geekofia" target="_blank"><i
+                    class="fab fa-telegram-plane"></i></a>
+        </li>
+    </ul>
+
+    <!-- <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3"
+        href="https://github.com/twbs/bootstrap/archive/v4.0.0.zip">Download</a> -->
+</header>
 
 <!-- Script pointing to search-script.js -->
 <script src="/assets/js/search.js" type="text/javascript"></script>
