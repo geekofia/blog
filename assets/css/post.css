@@ -214,6 +214,10 @@ img[src$='#img-fluid'] {
     text-align: center;    
 }
 
+.align-center img{
+    padding: 50px 20px 50px 20px;
+}
+
 @media (min-width: 576px) {
     .align-center img{
         max-width: 376px;
