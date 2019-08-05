@@ -73,6 +73,7 @@ li {
     background: transparent;
     box-shadow: none !important;
     width: 500px;
+    border-radius: 0 !important;
 }
 
 #search-icon{

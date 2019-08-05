@@ -205,3 +205,11 @@ p {
     background-color: blueviolet;
     color: #fff;
 }
+
+.metadata {
+    color: #9e9e9e;
+}
+
+.metadata li .far {
+    color: #858585;
+}
