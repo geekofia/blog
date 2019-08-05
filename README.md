@@ -18,7 +18,7 @@ Categories are not going to change frequently, but still you are welcome to sugg
 
 You can suggest new category by creating a new issue [here](https://github.com/GEEKOFIA/blog/issues). The category most be unique then suported ones, broad (which means we can easily categorize posts which best suit this category). **Read how to name a issue for adding a category [here](/.github/CONTRIBUTING.md#suggesting-category).**
 
-### Supported Tags
+### Supported Tags [Currently Disabled]
 
 Tags can fall under more than categories.
 

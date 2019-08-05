@@ -112,7 +112,7 @@ You can suggest new category by creating a new issue [here](https://github.com/G
 - Title of the issue must be named as the given format : `[suggestion][category] Category_Name`
 - The category name will be in all small letters without space. Try to keep it a single word (i.e. `security` is a good name but `cyber-security` not).
 
-### Suggesting Tags
+### Suggesting Tags [Currently Disabled]
 
 Fell free to add tags which you thinks most relevant.
 You can suggest new tags by creating a new issue [here](https://github.com/GEEKOFIA/blog/issues).
