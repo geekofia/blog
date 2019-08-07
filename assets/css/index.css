@@ -4,12 +4,11 @@
 @import "footer.css";
 @import "animation.css";
 @import "search.css";
-
 /** import fonts **/
+
 @font-face {
     font-family: 'Google Sans';
-    src: url('../fonts/GoogleSans/GoogleSans-Regular.ttf') format('truetype'),
-        url('../fonts/GoogleSans/GoogleSans-Bold.ttf') format('truetype');
+    src: url('../fonts/GoogleSans/GoogleSans-Regular.ttf') format('truetype'), url('../fonts/GoogleSans/GoogleSans-Bold.ttf') format('truetype');
 }
 
 body {
@@ -34,9 +33,8 @@ body {
 
 a {
     color: #007BFF;
-    /* Azure Radiance */
-    background-color: transparent;
     text-decoration: none !important;
+    background-color: transparent;
 }
 
 a:hover {
@@ -79,16 +77,16 @@ p {
 .ul-latest-posts {
     list-style-type: none;
     padding-left: 0px;
+    padding-right: 0px;
     padding-top: 20px;
 }
 
 .li-post .post-title {
-    color: #000;
+    font-weight: 700;
 }
 
-
-.li-post:hover {
-    opacity: 0.6;
+.li-post:hover .a-read-more {
+    clip-path: circle(75%);
 }
 
 .end-of-post {
@@ -97,8 +95,7 @@ p {
     margin: auto;
 }
 
-.lnr,
-.txt1.p-b-20 {
+.lnr, .txt1.p-b-20 {
     color: #000;
 }
 
@@ -172,6 +169,7 @@ p {
 }
 
 /*Scroll Up*/
+
 .scrollup {
     width: 35px;
     height: 35px;
@@ -212,4 +210,9 @@ p {
 
 .metadata li .far {
     color: #858585;
+}
+
+.a-read-more {
+    clip-path: circle(0% at 0% 0%);
+    transition: clip-path .5s ease-in-out;
 }

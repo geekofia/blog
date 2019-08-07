@@ -1,10 +1,9 @@
 @import "prism.css";
-
 .content {
     text-transform: none;
 }
 
-.btn-back {
+/* .btn-back {
     padding: 5px 10px 5px 10px;
     margin-top: 10px;
     border: 1px solid #00B444;
@@ -19,11 +18,9 @@ button:hover {
     color: #FFF;
     border: none;
     background: #00B444;
-}
+} */
 
-.fa-calendar,
-.fa-user-edit,
-.fa-folder {
+.fa-calendar, .fa-user-edit, .fa-folder {
     /* padding-right: 5px; */
     font-size: 1.2em;
 }
@@ -63,16 +60,7 @@ code.highlighter-rouge {
     border-radius: 5px;
 }
 
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L4,
-li.L5,
-li.L6,
-li.L7,
-li.L8,
-li.L9 {
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
     list-style-type: decimal !important;
     background: transparent !important;
 }
@@ -81,8 +69,7 @@ li.L9 {
     padding-top: 20px;
 }
 
-.tags,
-.categories {
+.tags, .categories {
     color: #FFF;
     background: #007BFF;
     border: none;
@@ -90,8 +77,7 @@ li.L9 {
     padding: 2px 5px;
 }
 
-.tags:hover,
-.categories:hover {
+.tags:hover, .categories:hover {
     background: #aaa;
     color: #FFF;
 }
@@ -100,6 +86,7 @@ li.L9 {
     margin: 0 5px;
     padding: 5px;
 } */
+
 .card-deck {
     margin-right: -5px;
     margin-left: -5px;
@@ -115,8 +102,7 @@ li.L9 {
     width: inherit;
 }
 
-.prev-post-button,
-.next-post-button {
+.prev-post-button, .next-post-button {
     padding: 6px 12px;
     text-align: center;
     cursor: pointer;
@@ -166,23 +152,21 @@ li.L9 {
     border-left: 7px solid #2f9142;
 }
 
-.note.g code,
-.note.y code,
-.note.g code {
+.note.g code, .note.y code, .note.g code {
     color: white;
     border: 1px dashed white;
     border-radius: 4px;
     padding: 2px 5px;
 }
 
-h4{
+h4 {
     margin: 20px 0 10px 0;
     color: #007BFF;
     font-size: 1.5em;
     font-weight: 700;
 }
 
-h4:before{
+h4:before {
     content: "# ";
 }
 
@@ -211,41 +195,42 @@ img[src$='#img-fluid'] {
     height: auto;
 }
 
-.align-center{
-    text-align: center;    
+.align-center {
+    text-align: center;
 }
 
-.align-center img{
+.align-center img {
     padding: 50px 20px 50px 20px;
 }
 
 @media (min-width: 576px) {
-    .align-center img{
+    .align-center img {
         max-width: 376px;
     }
 }
 
 @media (min-width: 768px) {
-    .align-center img{
+    .align-center img {
         max-width: 568px;
     }
 }
 
 @media (min-width: 992px) {
-    .align-center img{
+    .align-center img {
         max-width: 792px;
     }
 }
 
 @media (min-width: 1200px) {
-    .align-center img{
+    .align-center img {
         max-width: 1000px;
     }
 }
 
 .screenshots {
     float: left;
-    width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    width: 50%;
+    /* three boxes (use 25% for four, and 50% for two, etc) */
     padding: 30px;
 }
 
@@ -253,7 +238,7 @@ img[src$='#img-fluid'] {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 /* .screenshots img{
     display: block;
