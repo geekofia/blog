@@ -7,7 +7,7 @@ thumbnail: /assets/images/thumbnails/mx-player.png
 desc: "MX Player Pro 1.11.6 Patched APK For All Devices"
 ---
 {: .align-center}
-![alt-text](https://www.mxplayer.in/images/mx_footer_logo.png)
+![featured-image](https://www.mxplayer.in/images/mx_footer_logo.png)
 
 MX Player is a video player for android which is one of the most downloaded apps for Android. It can play all type of videos formats.
 

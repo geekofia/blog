@@ -7,7 +7,7 @@ thumbnail: /assets/images/thumbnails/hdmi-001.png
 desc: "Fix HDMI monitor flashing/blinking/flickring"
 ---
 {: .align-center}
-![alt-text](/assets/images/posts/pulseaudio-default-pa.svg#img-fluid)
+![featured-image](/assets/images/posts/pulseaudio-default-pa.svg)
 
 Recently when i was working on android studio for my blog app, i found some thing really weird. My monitor was blinking rapidly, texts are glitching. At first i thought my monitor is dead, unplugged & cleaned HDMI but all are in vain. I also did change my frequency.
 
