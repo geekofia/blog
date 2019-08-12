@@ -6,7 +6,7 @@ permalink: "api/v3/categories/"
     {% assign CURRENT_CATEGORY = category[0] %}
     {
         "category"  : "{{ CURRENT_CATEGORY }}",
-        "logo" : "fab fa-{{CURRENT_CATEGORY | downcase }}",
+        "logo" : "/assets/images/icons/{{ CURRENT_CATEGORY }}.png",
         "posts": [
             {% for post in site.categories[CURRENT_CATEGORY] %}
                 {
