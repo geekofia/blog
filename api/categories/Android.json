@@ -1,8 +1,8 @@
 ---
-permalink: "api/v3/posts/"
+permalink: "api/v3/categories/Android/"
 ---
 [
-    {% for post in site.posts %}
+    {% for post in site.categories["Android"] %}
         {
             "title"    : "{{ post.title | escape }}",
             "author"   : "{% assign author = site.authors | where: 'short_name', page.author | first %}{% if author %}{{ author.name | escape }}{% endif %}",

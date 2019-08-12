@@ -1,5 +1,5 @@
 ---
-permalink: "api/v2/authors/"
+permalink: "api/v3/authors/"
 ---
 [
     {% for author in site.authors %}
