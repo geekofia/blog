@@ -83,6 +83,7 @@ p {
 
 .li-post .post-title {
     font-weight: 700;
+    text-transform: none;
 }
 
 .li-post:hover .a-read-more {
