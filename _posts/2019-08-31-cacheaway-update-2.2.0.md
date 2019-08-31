@@ -1,5 +1,5 @@
 ---
-title: "CacheAway App v2.2.0 Coming Soon"
+title: "CacheAway Update v2.2.0 Coming With Settings"
 author: chankruze
 date: 2019-08-31 10:10:03 +05:30
 categories: [Android]
@@ -17,6 +17,7 @@ If you don't have this app yet, download from [Play Store](https://play.google.c
 __What's modified__
 * Settings added to save user preference
 * Cleans user preferred caches when clean all is pressed.
+* Update ripple effect and it's color
 * Add option to receive notification if customize clean all is disabled
 * Update button name to CLEAN ALL
 * Dynamically update helper text under clean all button
