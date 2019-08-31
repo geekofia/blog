@@ -225,6 +225,11 @@ strong {
     .align-center img {
         max-width: 568px;
     }
+
+    .yt-video iframe{
+        max-width: 560px;
+        max-height: 315px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -268,4 +273,20 @@ strong {
 
 .yt-video iframe{
     border: 2px solid #007BFF;
+    width: 560px;
+    height: 315px;
+}
+
+@media (max-width: 762px) {
+    .yt-video iframe{
+        max-width: 460px;
+        max-height: 260px;
+    }
+}
+
+@media (max-width: 576px){
+    .yt-video iframe{
+        max-width: 300px;
+        max-height: 170px;
+    }
 }
