@@ -259,3 +259,13 @@ strong {
     width: auto;
     height: auto;
 } */
+
+.yt-video{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.yt-video iframe{
+    border: 2px solid #007BFF;
+}
