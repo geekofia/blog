@@ -9,6 +9,7 @@ desc: "How to root Realme X"
 Hi there,
 After bringing up successful TWRP & PBRP, I tried installing Magisk by flashing zip from recovery to get root access. From android pie many devices no longer uses ramdisk in boot images. Magisk used to patch ramdisk, but as there  is no ramdisk in boot, flashing magisk does nothing but generates same boot image with different key due to which device thinks it's boot is corrupted. For this situation, magisk has no chice, it should be installed in the recovery partition.
 
+{: .note .g }
 You can read more about magisk in recovery [here](https://topjohnwu.github.io/Magisk/install.html#magisk-in-recovery). And about new partiton layout [here](https://source.android.com/devices/bootloader/system-as-root).
 
 I remembered same situation for Realme 3 pro where i patched the recovery image and then flashed vbmeta with disable verity flag to get root access. Same thing applied here. I patched the recovery image (both twrp & pbrp) then flashed vbmeta following recovery flash.
