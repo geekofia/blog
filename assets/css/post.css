@@ -290,3 +290,11 @@ strong {
         max-height: 170px;
     }
 }
+.warning-container{
+    color: #e45454;
+}
+
+.warning-container img{
+    height: 50px;
+    width: 50px;
+}
