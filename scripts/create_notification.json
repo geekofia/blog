@@ -1,0 +1,10 @@
+{
+	"app_id": "934a0007-02bc-4385-bd4f-35b491fe6687",
+	"included_segments": ["All"],
+	"headings": {"en": "New Post Published"},
+	"android_accent_color": "#007BFF",
+	"small_icon": "ic_launcher",
+	"delayed_option": "last-active",
+	"priority": 10,
+	"contents": {"en": "A new post has been published, check it out !"}
+}
