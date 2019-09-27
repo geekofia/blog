@@ -1,7 +1,7 @@
 script:
 - gem install bundler:2.0.1
 - bundle update --bundler
-- if [[ "${TRAVIS_COMMIT_MESSAGE}" =~ "New-Post" ]]; then export PUSH_NOTIFICATION="yes"; else export PUSH_NOTIFICATION="no"; fi
+- if [[ "$TRAVIS_COMMIT_MESSAGE" =~ "New-Post" ]]; then export PUSH_NOTIFICATION="yes"; else export PUSH_NOTIFICATION="no"; fi
 
 deploy:
   provider: pages
@@ -10,9 +10,12 @@ deploy:
   github_token: "$GH_TOKEN"
   keep_history: true
   verbose: true
-  script: ./scripts/new_post_push_message.sh $OPEN_SIGNAL_API $PUSH_NOTIFICATION
   on:
     branch: master
+
+after_success:
+  - chmod +x ./scripts/new_post_push_message.sh
+  - ./scripts/new_post_push_message.sh $OPEN_SIGNAL_API $PUSH_NOTIFICATION
 
 env:
   global:
