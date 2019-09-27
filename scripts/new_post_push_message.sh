@@ -1,3 +1,5 @@
+echo "[Blog] Send Push Notification = $2";
+echo "=====================================================";
 if [[ -z "$1" || $1 == "" ]]; then
     echo "[Open Signal] REST_API_KEY is not provided or empty";
 elif [[ -z "$2" || $2 != "yes" ]]; then
@@ -11,3 +13,4 @@ else
         --data-binary @create_notification.json \
         https://onesignal.com/api/v1/notifications;
 fi
+echo "=====================================================";
