@@ -10,9 +10,13 @@ deploy:
   github_token: "$GH_TOKEN"
   keep_history: true
   verbose: true
-  script: ./scripts/new_post_push_message.sh $OPEN_SIGNAL_API $PUSH_NOTIFICATION
+  script: 
   on:
     branch: master
+
+after_success:
+  - chmod +x ./scripts/new_post_push_message.sh
+  - ./scripts/new_post_push_message.sh $OPEN_SIGNAL_API $PUSH_NOTIFICATION
 
 env:
   global:
