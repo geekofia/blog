@@ -66,7 +66,13 @@ I remembered same situation for Realme 3 pro where i patched the recovery image 
 
 1. Now interesting thing is (also if you read the magisk in recovery notes linked above) when you do reboot to recovery it won't reboot to recovery, it will reboot to **system with magisk**.
 
-_Note:_ You **Can'T use custom recoveries to install/upgrade Magisk!**
+1. To boot into recovery mode you have to keep pressing volume up button untill you see recovery splash screen.
+
+_Note:_
+- You **Can'T use custom recoveries to install/upgrade Magisk!**
+- (Powering up normally) → (System with NO Magisk)
+- (OEM Recovery Key Combo) → (Splash screen) → (Release all buttons) → (System with Magisk)
+- (OEM Recovery Key Combo) → (Splash screen) → (Keep pressing volume up) → (Actual recovery)
 
 #### Reverting Back
 - Flash working TWRP or PBRP to recovery partion
