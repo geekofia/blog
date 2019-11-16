@@ -38,9 +38,9 @@ button:hover {
 
 code.highlighter-rouge {
     color: #000;
-    padding: 2px 5px;
-    background: #EEEEEE;
-    border-radius: 5px;
+    padding: 2px 5px !important;
+    background: #EEEEEE !important;
+    border-radius: 5px !important;
 }
 
 /* 
