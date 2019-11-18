@@ -298,3 +298,15 @@ strong {
     height: 50px;
     width: 50px;
 }
+
+.ad_media_net{
+    padding: 10px;
+    z-index: 1000;
+}
+
+/*
+.ad_media_net.ad-300-250{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+} */
