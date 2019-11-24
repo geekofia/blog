@@ -76,4 +76,16 @@ $ npx -v
 6.10.0
 ```
 
+#### Symlink to `/usr/bin/` [Update]
+
+Today (Mon 25 Nov 00:57:47 IST 2019), I was installing `nodemon` as global dependency in my machine and it asked me to run `npm install nodemon -g` as super user, in fact all the global deps do need to install to the system rather then to the project folder. But when i run with sudo it was unable to find `npm` and same for node `node`. Reason was simple, there was no `usr/bin/node` neither `npm`. So we need to symlink our installation folder to `/usr/bin/`.
+
+To do that execute below commands:
+
+```bash
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/node /usr/bin/node
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npm /usr/bin/npm
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npx /usr/bin/npx
+```
+
 Thanks for reading this post.
