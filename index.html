@@ -2,15 +2,21 @@
 layout: default
 title: GEEKOFIA Blog
 ---
-<h2 class="page-heading">< The Latest /><a href="/feed.xml" class="btn-feed"><i class="fas fa-rss-square"></i></a></h2>
+<h2 class="page-heading">
+    < The Latest /><a href="/feed.xml" class="btn-feed">
+        <i class="fas fa-rss-square" data-toggle="tooltip" data-placement="bottom" title="RSS Feed"></i>
+    </a>
+</h2>
 
 <ul class="ul-latest-posts">
     {% for post in site.posts %}
-        {% include post_list.html %}
+    {% include post_list.html %}
     {% endfor %}
 </ul>
 
-<!-- ADs -->
-{% include ad_300x250.html %}
+{% include android_app.html %}
 
-<!-- <script id="dsq-count-scr" src="//geekofia-blog.disqus.com/count.js" async></script> -->
+<!-- ADs -->
+<!-- {% include ad_300x250.html %} -->
+
+<script id="dsq-count-scr" src="//geekofia-blog.disqus.com/count.js" async></script>

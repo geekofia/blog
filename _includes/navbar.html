@@ -1,9 +1,10 @@
-<span id="welcome" class="d-block px-3 py-2 text-center text-white bg-danger old-bv">Welcome to Geekofia Blog beta
-    preview !</span>
+<!-- <span id="welcome" class="d-block px-3 py-2 text-center text-white bg-danger old-bv">Welcome to Geekofia Blog beta
+    preview !</span> -->
 
 <header class="navbar navbar-expand navbar-dark bg-dark flex-column flex-md-row bd-navbar">
     <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
-        <i class="fas fa-robot logo-icon"></i>
+        <img src="../assets/images/icons/logo.png" id="logo-icon" />
+        {% include app-qr.html %}
     </a>
 
     <div class="navbar-nav-scroll">
@@ -43,16 +44,25 @@
             </div>
         </li> -->
         <li class="nav-item">
-            <a class="nav-link p-2" href="https://github.com/geekofia" target="_blank"><i
-                    class="fab fa-github"></i></a>
+            <a class="nav-link p-2" href="https://play.google.com/store/apps/details?id=in.geekofia.blog"
+                target="_blank">
+                <i class="fab fa-android" data-toggle="tooltip" data-placement="bottom" title="Android App"></i>
+            </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link p-2" href="https://instagram.com/geekofia" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
+            <a class="nav-link p-2" href="https://github.com/geekofia" target="_blank">
+                <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" title="Github"></i>
+            </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link p-2" href="https://t.me/geekofia" target="_blank"><i
-                    class="fab fa-telegram-plane"></i></a>
+            <a class="nav-link p-2" href="https://instagram.com/geekofia" target="_blank">
+                <i class="fab fa-instagram" data-toggle="tooltip" data-placement="bottom" title="Instagram"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link p-2" href="https://t.me/geekofia" target="_blank">
+                <i class="fab fa-telegram-plane" data-toggle="tooltip" data-placement="bottom" title="Telegram"></i>
+            </a>
         </li>
     </ul>
 

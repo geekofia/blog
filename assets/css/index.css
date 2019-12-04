@@ -4,6 +4,9 @@
 @import "footer.css";
 @import "animation.css";
 @import "search.css";
+@import "android_app.css";
+@import "app-qr.css";
+
 /** import fonts **/
 
 @font-face {
@@ -156,7 +159,7 @@ p {
     padding: 20px 0;
 }
 
-.content a:not([href*='geekofia.in']):not([href^='#']):not([href^='/']):after {
+.content a:not([href*='geekofia.in']):not([href*='in.geekofia']):not([href^='#']):not([href^='/']):after {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     /* 900 (Solid), 400 (Regular or Brands), 300 (Light) */

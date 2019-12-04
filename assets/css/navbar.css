@@ -58,15 +58,16 @@ li {
     padding: .5rem !important;
 }
 
-.logo-icon {
-    font-size: 1.5em;
+#logo-icon {
+    width: 2.8rem;
+    height: 2.8rem;
 }
 
 #search-form {
     margin: auto;
 }
 
-#search-input{
+#search-input {
     border: none;
     border: 1px solid #FFF;
     color: #FFF;
@@ -76,25 +77,23 @@ li {
     border-radius: 0 !important;
 }
 
-#search-icon{
+#search-icon {
     padding-right: 5 !important;
     border: none !important;
     background: transparent !important;
 }
 
-.fa-search{
+.fa-search {
     color: #FFF;
     font-size: 1em;
 }
 
-#welcome{
+#welcome {
     max-height: 35px;
 }
 
 @media (max-width: 353px) {
-    #search-form,
-    #welcome,
-    .bd-navbar{
+    #search-form, #welcome, .bd-navbar {
         display: none !important;
     }
 }
@@ -103,21 +102,20 @@ li {
     #search-input {
         max-width: 340px;
     }
-
     .bd-navbar {
         position: relative;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 795px) {
+    #search-input {
+        max-width: 200px;
     }
 }
 
 @media (min-width: 517px) and (max-width: 762px) {
     #search-input {
         max-width: 100%;
-    }
-}
-
-@media (min-width: 762px) and (max-width: 795px) {
-    #search-input {
-        max-width: 200px;
     }
 }
 
@@ -137,4 +135,17 @@ li {
     #search-input {
         min-width: 500px;
     }
+}
+
+#market-app-nav {
+    max-height: 2.8rem;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand:hover #app-qr-div {
+    display: block;
+    text-align: center;
 }

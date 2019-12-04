@@ -1,0 +1,15 @@
+#app-qr-div {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+}
+
+#app-qr-div span {
+    color: #000;
+    display: inline-block;
+}
+
+#app-qr-img {
+    width: 250px;
+    height: 250px;
+}
