@@ -304,9 +304,22 @@ strong {
     z-index: 1000;
 }
 
+
 /*
 .ad_media_net.ad-300-250{
     position: absolute;
     left: 50%;
     top: 50%;
+} */
+
+.centered-image-wrapper {
+    text-align: center;
+}
+
+.centered-image-wrapper>img {
+    max-height: 500px;
+}
+
+/* .twitter-tweet {
+    margin: auto;
 } */

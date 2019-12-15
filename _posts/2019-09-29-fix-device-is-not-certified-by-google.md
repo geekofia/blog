@@ -1,5 +1,5 @@
 ---
-title: "How to Fix 'Device is not Certified by Google' Error"
+title: "How to Fix Device is not Certified by Google Error"
 author: chankruze
 date: 2019-09-29 05:34:17 +05:30
 categories: [Android, HowTo]
