@@ -2,7 +2,7 @@
 title: "Properly Install Windows Powershell in Ubuntu 19.04 (Disco Dingo)"
 author: chankruze
 date: 2019-11-17 21:42:43 +05:30
-categories: [Android, HowTo]
+categories: [HowTo]
 thumbnail: https://res.cloudinary.com/chankruze/image/upload/v1574007416/blog/thumbnails/powershell.png
 desc: "How to Install Windows Powershell in Ubuntu 19.04 (Disco Dingo)"
 ---

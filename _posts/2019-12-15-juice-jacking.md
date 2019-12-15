@@ -1,10 +1,10 @@
 ---
 title: "Juice Jacking: The Truth and Logic Behind it"
 author: chankruze
-date: 2019-11-17 21:42:43 +05:30
-categories: [Android, HowTo]
+date: 2019-12-15 07:54:19 +05:30
+categories: [Miscellaneous]
 tags: [JuiceJacking, USB-Threat]
-thumbnail: https://res.cloudinary.com/chankruze/image/upload/v1574007416/blog/thumbnails/powershell.png
+thumbnail: https://res.cloudinary.com/chankruze/image/upload/v1576387820/blog/JuiceJacking/152106-full.jpg
 desc: "Is 'Juice-Jacking' via Public USB Ports a Real Security Threat?"
 ---
 Hi there, hooman is back !
