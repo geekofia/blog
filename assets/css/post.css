@@ -316,10 +316,14 @@ strong {
     text-align: center;
 }
 
-.centered-image-wrapper>img {
+/* .centered-image-wrapper>img {
     max-height: 500px;
-}
+} */
 
 /* .twitter-tweet {
     margin: auto;
 } */
+
+.badge {
+    font-size: 1em;
+}

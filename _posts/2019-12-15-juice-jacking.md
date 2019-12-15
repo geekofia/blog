@@ -56,7 +56,7 @@ Now as phone and station is physically connected, it now comes a layer deep to *
 When you connect your phone to any USB, depending upon the host machine (source) it acts differently. For example when you connect to a AC adapter it knows it's for charging ... how ??? It's not a human, is it AI ?? of course not. If you remember in old keypad devices, we have 2 ports (one for charging and other for data transfer). Now due to technology advancement (people really work hard for this) we now are able to charge nd transfer data in one port with USB ... agin how ?? Take a look at USB cable wiring image below to understand:
 
 {: .centered-image-wrapper}
-![USB Cable wiring](https://res.cloudinary.com/chankruze/image/upload/v1576371261/blog/JuiceJacking/USB-Cable-Wiring.jpg)
+![USB Cable wiring](https://res.cloudinary.com/chankruze/image/upload/v1576371261/blog/JuiceJacking/USB-Cable-Wiring.jpg){: .img-fluid}
 
 In a regural adapter those data pins are disconnected so phone receives polarity on RED (Vcc) and BLACK (GND) which makes it think it's only charging. So first thing you can know from phones behaviour, when you connect your phone to any USB outlet, is it actully planted for charging or harvesting data. Noone can pull data without data pins.
 
@@ -84,7 +84,7 @@ Gamers probably have dev options enabled to use the GPU for 2D graphics renderin
 - When you connect your phone to USB station or any unkown guy's laptop/pc and you see a dialog like below, it means that host device (station/pc/laptop) is running ADB server and wants your phone to connect as a client. Now you should "Cancel" the request if you click "Ok" attacker will get enough permisson to get a shell acess to your phone. And shell is dangerous:
 
 {: .centered-image-wrapper}
-![ADB Debug Permission](https://res.cloudinary.com/chankruze/image/upload/v1576369505/blog/JuiceJacking/adb-debug-confirmation.png)
+![ADB Debug Permission](https://res.cloudinary.com/chankruze/image/upload/v1576369505/blog/JuiceJacking/adb-debug-confirmation.png){: .img-fluid}
 
 #### Mitigations
 
@@ -93,6 +93,8 @@ I'll suggest the following things:
 1. Turn the phone off first then connect.
 
 1. Carry your adapter and cable (modified cable can be a threat for remote Jacking, suggest reading [this](https://techcrunch.com/2019/08/12/iphone-charging-cable-hack-computer-def-con/))
+
+1. Buy a cable which hasn't data pins, so data stealing is totally eliminated no matter what your phones setting is. {% include badge.html text="best" %}
 
 These 2 is the real precautions, i'll never suggest to buy a power bank just for this threat, which is totally user dependent. What if the power bank is really not a power bank and turns out it's a hijacking box with advance tools embeded. Only product sellers will suggest buying power bank which all other post did.
 
@@ -313,6 +315,31 @@ chankruze@geekofia:/run/user/1000/gvfs/mtp:host=Realme_SDM710-MTP__SN%3AB5CA41D6
 
 # All gone !
 ```
+
+What shown at Def Con 21 by Wall of Sheep was a kiosk which was running a script similar to below snippet. In which the script was checking at regular interval if a device is connected or not. If it detects a phone it was replacing "Cell phone chrging kiosk"(left) with "you should not trust public kisoks" (right) one.
+
+```bash
+#!/bin/bash
+base_count=`/sbin/lsusb | wc –l`;
+last_count=$base_count;
+interval=2;
+
+while ( sleep $interval; ) do
+    count=`/sbin/lsusb | wc –l`;
+
+    if [ $last_count != $count ] && [ $count != $base_count ]
+    then
+        /usr/bin/xsetroot -solid \#a30909;
+        killall viewnior:
+        viewnior --slideshow yourestupid.jpg;
+        sleep 5;
+        viewnior --slideshow chargestation.jpg;
+    fi
+done
+```
+{: .centered-image-wrapper}
+![left](https://res.cloudinary.com/chankruze/image/upload/v1576384931/blog/JuiceJacking/test-1.png){: .img-fluid}
+![right](https://res.cloudinary.com/chankruze/image/upload/v1576384931/blog/JuiceJacking/test-2.png){: .img-fluid}
 
 So i can assure that if a normal user turns off USB Debugging or even better developer mode and USB Connection type to "Charge Only" or "MIDI" physical Juice Jacking can be prevented.
 
