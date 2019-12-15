@@ -180,51 +180,6 @@ S:  Product=Dell MS116 USB Optical Mouse
 C:  #Ifs= 1 Cfg#= 1 Atr=a0 MxPwr=100mA
 I:  If#=0x0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=02 Driver=usbhid
 
-T:  Bus=01 Lev=02 Prnt=02 Port=03 Cnt=02 Dev#=  6 Spd=1.5 MxCh= 0
-D:  Ver= 1.10 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 8 #Cfgs=  1
-P:  Vendor=1a2c ProdID=0c21 Rev=01.10
-S:  Manufacturer=USB
-S:  Product=USB Keyboard
-C:  #Ifs= 2 Cfg#= 1 Atr=a0 MxPwr=100mA
-I:  If#=0x0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=01 Driver=usbhid
-I:  If#=0x1 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=02 Driver=usbhid
-
-T:  Bus=01 Lev=01 Prnt=01 Port=06 Cnt=04 Dev#=  3 Spd=480 MxCh= 0
-D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  1
-P:  Vendor=0408 ProdID=3061 Rev=00.01
-S:  Manufacturer=Quanta
-S:  Product=USB2.0 HD UVC WebCam
-S:  SerialNumber=0x0001
-C:  #Ifs= 2 Cfg#= 1 Atr=80 MxPwr=500mA
-I:  If#=0x0 Alt= 0 #EPs= 1 Cls=0e(video) Sub=01 Prot=00 Driver=uvcvideo
-I:  If#=0x1 Alt= 0 #EPs= 0 Cls=0e(video) Sub=02 Prot=00 Driver=uvcvideo
-
-T:  Bus=02 Lev=00 Prnt=00 Port=00 Cnt=00 Dev#=  1 Spd=5000 MxCh= 8
-D:  Ver= 3.00 Cls=09(hub  ) Sub=00 Prot=03 MxPS= 9 #Cfgs=  1
-P:  Vendor=1d6b ProdID=0003 Rev=05.00
-S:  Manufacturer=Linux 5.0.0-36-generic xhci-hcd
-S:  Product=xHCI Host Controller
-S:  SerialNumber=0000:00:14.0
-C:  #Ifs= 1 Cfg#= 1 Atr=e0 MxPwr=0mA
-I:  If#=0x0 Alt= 0 #EPs= 1 Cls=09(hub  ) Sub=00 Prot=00 Driver=hub
-
-T:  Bus=02 Lev=01 Prnt=01 Port=01 Cnt=01 Dev#=  2 Spd=5000 MxCh= 4
-D:  Ver= 3.00 Cls=09(hub  ) Sub=00 Prot=03 MxPS= 9 #Cfgs=  1
-P:  Vendor=2109 ProdID=0813 Rev=90.11
-S:  Manufacturer=VIA Labs, Inc.
-S:  Product=USB3.0 Hub
-C:  #Ifs= 1 Cfg#= 1 Atr=e0 MxPwr=0mA
-I:  If#=0x0 Alt= 0 #EPs= 1 Cls=09(hub  ) Sub=00 Prot=00 Driver=hub
-
-T:  Bus=02 Lev=02 Prnt=02 Port=00 Cnt=01 Dev#=  3 Spd=5000 MxCh= 0
-D:  Ver= 3.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 9 #Cfgs=  1
-P:  Vendor=0480 ProdID=a200 Rev=00.00
-S:  Manufacturer=TOSHIBA
-S:  Product=External USB 3.0
-S:  SerialNumber=20170707017726F
-C:  #Ifs= 1 Cfg#= 1 Atr=80 MxPwr=896mA
-I:  If#=0x0 Alt= 0 #EPs= 2 Cls=08(stor.) Sub=06 Prot=50 Driver=usb-storage
-
 ```
 Even me or any advance attacker will write a small script with phone manufactures list to filter out rest accessories. For a USB station it's no need cuse they will have all phone connection.
 
@@ -242,9 +197,7 @@ From above result i can see that the associated Bus is 01 which i primary USB 3.
 
 ```bash
 demo@geekofia-box:~$ cd /run/user/1000/gvfs/
-
 demo@geekofia-box:/run/user/1000/gvfs$ ls
-
 
 ```
 
@@ -318,8 +271,13 @@ chankruze@geekofia:/run/user/1000/gvfs/mtp:host=Realme_SDM710-MTP__SN%3AB5CA41D6
 
 # All gone !
 ```
+An example of the first ever Juice Jacking box in action.
 
-What shown at Def Con 21 by Wall of Sheep was a kiosk which was running a script similar to below snippet. In which the script was checking at regular interval if a device is connected or not. If it detects a phone it was replacing "Cell phone chrging kiosk"(left) with "you should not trust public kisoks" (right) one.
+{% include youtube_video.html src="https://www.youtube.com/embed/SgWURvn_q-U" %}
+
+This specific box looks like a simple Power Charging Kiosk for mobile devices, however, when a device is plugged in, it detects if it can connect to its data and then changes the screen to the a warning message.
+
+This was a proof of concept by Wall of Sheep. This kiosk was running a script very similar to below snippet. In which the script was checking at regular interval if a device is connected or not. If it detects a phone it was replacing "Cell phone chrging kiosk"(left) with "you should not trust public kisoks" (right) one.
 
 ```bash
 #!/bin/bash
