@@ -15,13 +15,11 @@ Few days ago SBI tweeted below tweet about a threat when you plug in your phone 
 <p lang="en" dir="ltr">Think twice before you plug in your phone at charging stations. Malware could find a way in and infect your phone, giving hackers a way to steal your passwords and export your data.<a href="https://twitter.com/hashtag/SBI?src=hash&amp;ref_src=twsrc%5Etfw">#SBI</a> <a href="https://twitter.com/hashtag/Malware?src=hash&amp;ref_src=twsrc%5Etfw">#Malware</a> <a href="https://twitter.com/hashtag/CyberAttack?src=hash&amp;ref_src=twsrc%5Etfw">#CyberAttack</a> <a href="https://twitter.com/hashtag/CustomerAwareness?src=hash&amp;ref_src=twsrc%5Etfw">#CustomerAwareness</a> <a href="https://twitter.com/hashtag/Cybercrime?src=hash&amp;ref_src=twsrc%5Etfw">#Cybercrime</a> <a href="https://twitter.com/hashtag/SafeBanking?src=hash&amp;ref_src=twsrc%5Etfw">#SafeBanking</a> <a href="https://twitter.com/hashtag/JuiceJacking?src=hash&amp;ref_src=twsrc%5Etfw">#JuiceJacking</a> <a href="https://t.co/xzSMNNNv4U">pic.twitter.com/xzSMNNNv4U</a></p>&mdash; State Bank of India (@TheOfficialSBI) <a href="https://twitter.com/TheOfficialSBI/status/1203277437079040001?ref_src=twsrc%5Etfw">December 7, 2019</a></blockquote>
 <script async src="/assets/js/twitter-widgets.js" charset="utf-8"></script>
 
-And people are now panic ! You should know that Juice Jacking is now 9 years old, first found in 2011 when there was not much security for android devices.
-
-It should also be noted that both Android and iOS have incorporated features to prevent juice-jacking since this security threat first came to light circa 2011. On most modern phones, users will now see a pop-up alert if they are using a USB port that is capable of transferring data, instead of just power. 
-
 Above tweet got a hell lot of impressions and people are now panic. I read several posts which people are reffering in twitter, and believe me all the posts (some of them are very reputed) are writing about the defination and few points to prevent, in their prevention list they all have same content. Nobody discussed the actual thing. So i decided to write the actual logic behind "Juice Jacking".
 
 I will talk everything from how data is actually accessed in an android device to how Juice Jack. From my experiments, what i can say is, target of this attack is the people who are developers, intermediate and advance users. In a nutshell it's 99% about user awarness.
+
+It should also be noted that both Android and iOS have incorporated features to prevent juice-jacking since this security threat first came to light circa 2011. On most modern phones, users will now see a pop-up alert if they are using a USB port that is capable of transferring data, instead of just power. 
 
 #### The Definition
 
@@ -60,7 +58,12 @@ When you connect your phone to any USB, depending upon the host machine (source)
 
 In a regural adapter those data pins are disconnected so phone receives polarity on RED (Vcc) and BLACK (GND) which makes it think it's only charging. So first thing you can know from phones behaviour, when you connect your phone to any USB outlet, is it actully planted for charging or harvesting data. Noone can pull data without data pins.
 
-Now when you connected to a computer or any unknown attacker's device your phone should show a dialog box like shown below. If that's the case, "Juice Jacking" probabilities are present. Attacker can only steal your files. If you haven't saved any password to a text file, login credentials are secured.
+Now when you connected to a computer or any unknown attacker's device your phone should show a dialog box like shown below.
+
+{: .centered-image-wrapper}
+![ADB Debug Permission](https://res.cloudinary.com/chankruze/image/upload/v1576369505/blog/JuiceJacking/adb-debug-confirmation.png){: .img-fluid}
+
+If that's the case, "Juice Jacking" probabilities are present. Attacker can only steal your files. If you haven't saved any password to a text file, login credentials are secured.
 
 ##### Android Debug Bridge Scenario
 A bit advance users can use ADB to transfer files. `adb pull` to copy data from phone to host machine and `adb push` to copy data into phone.
