@@ -99,7 +99,7 @@ I'll suggest the following things:
 
 1. Buy a cable which hasn't data pins, so data stealing is totally eliminated no matter what your phones setting is. {% include badge.html text="best" %}
 
-These 2 is the real precautions, i'll never suggest to buy a power bank just for this threat, which is totally user dependent. What if the power bank is really not a power bank and turns out it's a hijacking box with advance tools embeded. Only product sellers will suggest buying power bank which all other post did.
+These 2 are the real precautions, i'll never suggest to buy a power bank just for this threat, which is totally user dependent. What if the power bank is really not a power bank and turns out it's a hijacking box with advance tools embeded. Only product sellers will suggest buying power bank which all other post did.
 
 If you are a normal user, netflix and chill type lol... don't panic, it's not a big threat. Just be attentive to the surroundings. And that's it for you.
 
@@ -181,7 +181,7 @@ C:  #Ifs= 1 Cfg#= 1 Atr=a0 MxPwr=100mA
 I:  If#=0x0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=02 Driver=usbhid
 
 ```
-Even me or any advance attacker will write a small script with phone manufactures list to filter out rest accessories. For a USB station it's no need cuse they will have all phone connection.
+Even me or any advance attacker will write a small script with phone manufactures list to filter out rest accessories. For a USB station it's no need cause they will have all phone connection.
 
 Now i'll try to access the file system.
 
@@ -193,17 +193,17 @@ P:  Vendor=18d1 ProdID=4ee8 Rev=04.09
 S:  Manufacturer=Realme
 ```
 
-From above result i can see that the associated Bus is 01 which i primary USB 3.0 port in my PC, and Dev is 19. Now i change my directory to `/run/user/1000/gvfs/` and see the list of folders there.
+From above result i can see that the associated Bus is 01 which is primary USB 3.0 port in my PC, and Dev is 19. Now i change my directory to `/run/user/1000/gvfs/` and see the list of folders there.
 
 ```bash
 demo@geekofia-box:~$ cd /run/user/1000/gvfs/
 demo@geekofia-box:/run/user/1000/gvfs$ ls
 
+# nothing
 ```
 
 Now see the results when i have:
 - Turned off USB debuging (Developer option is still on for GPU 2D rendering)
-- Default USB mode "Charge Only"
 - "Media Transfer" as Default USB Connection OR "Transfer Files" option selected in alert dialog. (same result)
 
 {: .screenshot-container }
