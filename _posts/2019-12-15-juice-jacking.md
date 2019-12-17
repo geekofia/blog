@@ -19,7 +19,13 @@ Above tweet got a hell lot of impressions and people are now panic. I read sever
 
 I will talk everything from how data is actually accessed in an android device to how Juice Jack. From my experiments, what i can say is, target of this attack is the people who are developers, intermediate and advance users. In a nutshell it's 99% about user awarness.
 
-It should also be noted that both Android and iOS have incorporated features to prevent juice-jacking since this security threat first came to light circa 2011. On most modern phones, users will now see a pop-up alert if they are using a USB port that is capable of transferring data, instead of just power. 
+It should also be noted that both Android and iOS have incorporated features to prevent juice-jacking since this security threat first came to light circa 2011. On most modern phones, users will now see a pop-up alert if they are using a USB port that is capable of transferring data, instead of just power.
+
+Before we start i want to let you know that this threat is only with USB outlet and outlets which provide micro USB cable, **NOT** with wall AC socket where you can plug in your adapter. Maybe below image can clear things more ...
+
+{: .centered-image-wrapper}
+![Airpot Outlet](https://res.cloudinary.com/chankruze/image/upload/v1576544406/blog/JuiceJacking/gjhgjghjhgjpng.png){: .img-fluid}
+
 
 #### The Definition
 
@@ -327,6 +333,8 @@ _Note: Most of the rooted devices USB debugging mode overides USB Transfer Mode 
 1. Case 04: **USB Debugging On + USB Transfer Mode = MTP** => **Full shell access (Total Disater)**
 
 To sum up: Juice-jacking is a genuine security threat, and the LA County District Attorney’s Office did issue an advisory in November 2019 warning travelers against using public USB ports. However, while it’s technically possible to juice-jack a phone, this is not a widespread criminal activity. 
+
+
 
 As far as draining bank account as SBI said, it's impossible in normal non rooted devices. Government is trying to panic and control people as they did by hand shaking with telecom companies.
 
