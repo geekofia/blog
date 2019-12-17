@@ -39,12 +39,9 @@ You can suggest new tags by creating a new issue [here](https://github.com/GEEKO
 - Categories
 - Tags
 - Email
+- Search
 
 ### To Do
-- Add functionality to previous/next post buttos
-- Remove post-excerpt and use content grabbing first 30 words as post preview.
-- Implement search functionality
-- Fix Navbar (make it more responsive on tablets)
 - You suggets by creating new issue
 
 ### Terms & Conditions
