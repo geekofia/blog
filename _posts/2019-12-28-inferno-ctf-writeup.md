@@ -104,7 +104,7 @@ Flag: infernoCTF{g0_Pr0gRaMM1ng_1s_Gr3At!!}
 #### Check Again
 This pissed off a lot !
 
-The hint `Dante Nero Sparda are the true demons.` was awesome ! `DNSremon` ~ `dnsrecon`.
+The hint `[D]ante [N]ero [S]parda a[re] the true de[mon]s.` was awesome ! Here i get `DNSremon` which is close enough to `dnsrecon`.
 
 ```bash
 $ dnsrecon -d infernoctf.live
@@ -145,6 +145,10 @@ Flag: infernoCTF{N1c3_Pl4c3_70_h1d3_1n_th3_Rec0rds}
 It was exploiting null byte poisoning to bypass egrep which was the second check (`ereg ("^[a-zA-Z0-9]+$", $magic)`) using `\x00` which encode looks like `A%00`.
 
 The request URL was:`http://104.197.168.32:17011/?..magic..=A%00$dark$`
+
+```text
+Flag: infernoCTF{1_gu3ss_y0ur_m4g1c_was_w4y_t00_d4rk}
+```
 
 **UPDATE**
 
