@@ -142,9 +142,9 @@ Flag: infernoCTF{N1c3_Pl4c3_70_h1d3_1n_th3_Rec0rds}
 #### Dante's Personal Home Page
 `preg_match("/_| /i", $check)` can be passed using `.` which transforms to `_` in php external variables. Thanks to @13k53c for pointing to the external variable docs.
 
-It was exploiting null byte poisoning to bypass egrep which was the second check (`ereg ("^[a-zA-Z0-9]+$", $magic)`) using `\x00` which encode looks like `A%00`.
+It was exploiting null byte poisoning to bypass egrep which was the second check (`ereg ("^[a-zA-Z0-9]+$", $magic)`) using any alpha numeric and `%00`. For example: `abc123%00`
 
-The request URL was:`http://104.197.168.32:17011/?..magic..=A%00$dark$`
+The request URL can be:`http://104.197.168.32:17011/?..magic..=ABC%00$dark$`
 
 ```text
 Flag: infernoCTF{1_gu3ss_y0ur_m4g1c_was_w4y_t00_d4rk}
