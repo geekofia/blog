@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Geekofia Blog
-email: contact@geekofia.in
+email: contact@geekofia.tk
 description: >- # this means to ignore newlines until "baseurl:"
   Geekofia's official blog domain
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.geekofia.in" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.geekofia.tk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chankruze
 github_username:  chankruze
 timezone: Asia/Kolkata
