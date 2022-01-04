@@ -1,0 +1,38 @@
+/* ===== Footer ===== */
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0;
+    border-top: 8px solid #007BFF;
+}
+
+.footer .float-left {
+    margin-top: 8px;
+    margin-left: 15px;
+    text-transform: none;
+}
+
+@media (min-width: 576px) {
+    footer {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    footer {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer {
+        max-width: 1140px;
+    }
+}

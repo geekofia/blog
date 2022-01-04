@@ -1,0 +1,151 @@
+.bd-navbar {
+    min-height: 4rem;
+    /* background-color: #563d7c; */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+}
+
+@media (min-width: 768px) {
+    .bd-navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1071;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .bd-navbar {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.bd-navbar .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #cbbde2;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-link i {
+    font-size: 1.5em;
+}
+
+.bd-navbar .navbar-nav-svg {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+}
+
+/* svg:not(:root) {
+    overflow: hidden;
+} */
+
+.p-2 {
+    padding: .5rem !important;
+}
+
+#logo-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+#search-form {
+    margin: auto;
+}
+
+#search-input {
+    border: none;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background: transparent;
+    box-shadow: none !important;
+    width: 500px;
+    border-radius: 0 !important;
+}
+
+#search-icon {
+    padding-right: 5 !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.fa-search {
+    color: #FFF;
+    font-size: 1em;
+}
+
+#welcome {
+    max-height: 35px;
+}
+
+@media (max-width: 353px) {
+    #search-form, #welcome, .bd-navbar {
+        display: none !important;
+    }
+}
+
+@media (min-width: 353.98px) and (max-width: 517px) {
+    #search-input {
+        max-width: 340px;
+    }
+    .bd-navbar {
+        position: relative;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 795px) {
+    #search-input {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 517px) and (max-width: 762px) {
+    #search-input {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 796px) and (max-width: 895px) {
+    #search-input {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 895px) and (max-width: 992px) {
+    #search-input {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #search-input {
+        min-width: 500px;
+    }
+}
+
+#market-app-nav {
+    max-height: 2.8rem;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand:hover #app-qr-div {
+    display: block;
+    text-align: center;
+}

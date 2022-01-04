@@ -1,0 +1,39 @@
+- name: Latest
+  link: /
+  title: Latest Blog Posts
+
+- name: Categories
+  link: /categories/
+  title: Grouped By Used Categories
+
+# - name: Tags
+#   link: /tags/
+#   title: Grouped By Used Tags
+
+# - name: Android
+#   link: /category/Android/
+#   title: Posts related to android
+
+# - name: How To
+#   link: /category/HowTo/
+#   title: Latest How To & Guides
+
+# - name: Programming
+#   link: /category/Programming/
+#   title: Posts related to Programmming & development
+
+# - name: Patches
+#   link: /category/Patches/
+#   title: All Patches posts
+
+# - name: Miscellaneous
+#   link: /category/Miscellaneous/
+#   title: Miscellaneous Blog Posts
+
+- name: Authors
+  link: /authors/
+  title: About Our Authors
+
+- name: Contact
+  link: /contact/
+  title: Reach us

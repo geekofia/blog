@@ -1,0 +1,21 @@
+
+#search-results{
+  right: 0;
+  margin: auto;
+}
+
+#no-results{
+  padding: 0 10px;
+}
+
+.dropdown-menu.show {
+  display: hiden;
+}
+
+.results-dropdown{
+  color: #2f9142;
+}
+
+.results-dropdown small{
+  color: #adadad;
+}

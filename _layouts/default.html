@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/404.css">
+
+    <!-- Google AdSense -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6465900080118516",
+            enable_page_level_ads: true
+        });
+    </script> -->
+    
+    <!-- Media.net Ad -->
+    <script type="text/javascript">
+        window._mNHandle = window._mNHandle || {};
+        window._mNHandle.queue = window._mNHandle.queue || [];
+        medianet_versionId = "3121199";
+    </script>
+    <script src="//contextual.media.net/dmedianet.js?cid=8CU4V44V7" async="async"></script>
+
+    {% feed_meta %}
+    {% seo %}
+</head>
+
+<body>
+    <!-- Navbar -->
+    {% include navbar.html %}
+
+    <div class="container content">
+        <!-- Rendered Content-->
+        {{ content }}
+    </div>
+
+    <!-- scroll up-->
+    <a href="#">
+        <div class="scrollup">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </a>
+    <!-- End off scroll up -->
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>

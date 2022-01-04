@@ -1,0 +1,21 @@
+---
+layout: default
+title: Categories | GEEKOFIA
+permalink: /categories/
+---
+<link rel="stylesheet" type="text/css" href="/assets/css/categories.css">
+
+<h2 class="title-categories">All Categories</h2>
+
+<div class="row">
+    {% for category in site.categories %}
+    {% assign bar = category[0] %}
+    <div class="column">
+        <a href="/categories/{{ bar }}/">
+            <div class="card">
+                <img class="card-img-top" src="/assets/images/icons/{{ bar }}.png" alt="Card image cap">
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

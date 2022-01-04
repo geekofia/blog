@@ -1,0 +1,36 @@
+---
+layout: default
+comments: true
+---
+<link rel="stylesheet" href="/assets/css/post.css">
+<script src="/assets/js/prism.js"></script>
+
+<div>
+  <!-- <button class="btn-back" onclick="goBack()">Go Back</button> -->
+  <h1>{{ page.title }}</h1>
+</div>
+
+{% include post_metadata_top.html %}
+
+<div class="post-contents">
+  {{ content }}
+</div>
+
+<p align="center"><b>o EOP o</b></p>
+
+<!-- ADs -->
+{% include ad_728x90.html %}
+
+{% include post_metadata_bottom.html %}
+
+<!-- {% include post_navigation.html %} -->
+
+<div class="related-posts">
+
+  {% include related_posts.html %}
+
+</div>
+
+{% include comments.html %}
+
+<script src="/assets/js/run_prettify.js"></script>

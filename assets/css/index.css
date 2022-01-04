@@ -1,0 +1,231 @@
+/** import indivisual CSS **/
+
+@import "navbar.css";
+@import "footer.css";
+@import "animation.css";
+@import "search.css";
+@import "android_app.css";
+@import "app-qr.css";
+
+/** import fonts **/
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans/GoogleSans-Regular.ttf') format('truetype'), url('../fonts/GoogleSans/GoogleSans-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Google Sans', 'Courier New', Courier, monospace;
+    text-transform: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.alert {
+    margin-top: 10px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #66BB6A;
+}
+
+/* mark {
+    background-color: #ff0;
+    color: #000
+} */
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+}
+
+.page-heading {
+    color: #000;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.btn-search {
+    font-weight: 500;
+    color: #ffe484;
+    border-color: #ffe484;
+}
+
+.jumbo-01 {
+    margin-top: 10px;
+}
+
+.content {
+    /* margin-top: 100px; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 8px solid #53c8ff;
+}
+
+.ul-latest-posts {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+}
+
+.li-post .post-title {
+    font-weight: 700;
+    text-transform: none;
+}
+
+.li-post:hover .a-read-more {
+    clip-path: circle(75%);
+}
+
+.end-of-post {
+    font-weight: bold;
+    padding-top: 5px;
+    margin: auto;
+}
+
+.lnr, .txt1.p-b-20 {
+    color: #000;
+}
+
+.btn-feed {
+    border: none;
+    color: #ff8800;
+    cursor: pointer;
+    float: right;
+}
+
+.fa-comments {
+    padding-right: 5px;
+}
+
+.col.post-img-box {
+    margin: auto;
+    max-height: inherit;
+    max-width: inherit;
+    text-align: center;
+}
+
+.icon-share {
+    font-size: 1.5em;
+}
+
+.post-bottom {
+    padding-top: 10px;
+}
+
+.social-share {
+    padding-top: 6px;
+}
+
+.icon-latest-posts {
+    padding-left: 10px !important;
+}
+
+/* @media (max-width: 1200px) {
+    .post-image {
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 992px) {
+    .post-image {
+        max-width: 210px;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-image {
+        max-width: 240px;
+    }
+} */
+
+.preview {
+    padding: 20px 0;
+}
+
+.content a:not([href*='geekofia.in']):not([href*='in.geekofia']):not([href^='#']):not([href^='/']):after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    /* 900 (Solid), 400 (Regular or Brands), 300 (Light) */
+    content: " \f35d";
+    /* fa-external-link-alt */
+}
+
+.img-fluid {
+    max-height: 240px;
+    margin: auto;
+}
+
+/*Scroll Up*/
+
+.scrollup {
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    opacity: .3;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 1000;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+}
+
+.scrollup i {
+    font-size: 15px;
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
+    margin-left: -7px;
+    text-decoration: none;
+}
+
+.scrollup:hover {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.metadata {
+    color: #9e9e9e;
+}
+
+.metadata li .far {
+    color: #858585;
+}
+
+.a-read-more {
+    clip-path: circle(0% at 0% 0%);
+    transition: clip-path .5s ease-in-out;
+}

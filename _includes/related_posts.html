@@ -1,0 +1,34 @@
+<div class="card-deck related-posts-box">
+    {% for post in site.categories[page.folder] %}
+    {% assign postnumber = 0 %}
+    {% include post_list.html %}
+    {% endfor %}
+
+    {% assign maxRelated = 3 %}
+    {% assign minCommonCategories =  1 %}
+    {% assign maxRelatedCounter = 0 %}
+    {% for post in site.posts %}
+    {% assign sameCategoryCount = 0 %}
+    {% assign commonCategories = '' %}
+    {% for category in post.categories %}
+    {% if post.url != page.url %}
+    {% if page.categories contains category %}
+    {% assign sameCategoryCount = sameCategoryCount | plus: 1 %}
+    {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+    {% assign commonCategories = commonCategories | append: tagmarkup %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% if sameCategoryCount >= minCommonCategories %}
+
+    <!-- Included Layout-->
+    {% assign postnumber = postnumber | plus: 1 %}
+    {% include post_list_card.html %}
+
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    {% if maxRelatedCounter >= maxRelated %}
+    {% break %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</div>
